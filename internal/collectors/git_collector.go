@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"log/slog"
 	"os"
-	"os/exec"
 	"path/filepath"
 	"strings"
 	"sync"
@@ -167,7 +166,7 @@ func (gc *GitCollector) collectRepositoryMetrics(ctx context.Context, repo confi
 	}
 
 	// Check if repository is dirty
-	isDirty, err := gc.isDirty(repo.Path)
+	isDirty, err := gc.isDirty(r)
 	if err != nil {
 		slog.Error("Failed to check if repository is dirty",
 			"repository", repo.Name,
@@ -266,17 +265,20 @@ func (gc *GitCollector) getCurrentBranch(r *git.Repository) (string, error) {
 	return branchName, nil
 }
 
-func (gc *GitCollector) isDirty(repoPath string) (bool, error) {
-	// Use git status to check if repository is dirty
-	cmd := exec.Command("git", "status", "--porcelain")
-	cmd.Dir = repoPath
-	output, err := cmd.Output()
+func (gc *GitCollector) isDirty(r *git.Repository) (bool, error) {
+	// Use go-git Worktree to check if repository is dirty
+	worktree, err := r.Worktree()
 	if err != nil {
-		return false, fmt.Errorf("failed to run git status: %w", err)
+		return false, fmt.Errorf("failed to get worktree: %w", err)
 	}
 
-	// If there's any output, the repository is dirty
-	return len(strings.TrimSpace(string(output))) > 0, nil
+	status, err := worktree.Status()
+	if err != nil {
+		return false, fmt.Errorf("failed to get worktree status: %w", err)
+	}
+
+	// If there are any changes, the repository is dirty
+	return !status.IsClean(), nil
 }
 
 func (gc *GitCollector) isRebaseInProgress(repoPath string) bool {
