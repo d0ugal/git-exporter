@@ -21,7 +21,43 @@ A Prometheus exporter for Git repository monitoring that exposes metrics about r
 
 ### Configuration
 
-Create a `config.yaml` file to configure Git repositories to monitor:
+Create a `config.yaml` file to configure Git repositories to monitor. You can either specify repositories explicitly or use discovery patterns to automatically find all Git repositories in a directory.
+
+### Explicit Repository Configuration
+
+Specify repositories individually with a name and path:
+
+```yaml
+git:
+  repositories:
+    - name: "my-repo"
+      path: "/path/to/repository"
+```
+
+### Discovery Patterns
+
+Use the `discover` field to automatically find all Git repositories in a directory. The exporter will recursively scan the specified directories and discover all Git repositories:
+
+```yaml
+git:
+  discover:
+    - "/home/user/Code"  # Discover all repos in the Code directory
+```
+
+You can combine both explicit repositories and discovery patterns:
+
+```yaml
+git:
+  repositories:
+    - name: "special-repo"
+      path: "/path/to/special/repository"
+  discover:
+    - "/home/user/Code"  # Also discover all repos in Code directory
+```
+
+When using discovery, repository names are automatically generated from the relative path from the discovery root. For example, if `/home/user/Code` contains `project1` and `project2`, they will be named `project1` and `project2` respectively.
+
+### Full Configuration Example
 
 ```yaml
 server:
@@ -37,11 +73,18 @@ metrics:
     default_interval: "30s"
 
 git:
+  # Explicit repositories (optional)
   repositories:
     - name: "my-repo"
       path: "/path/to/repository"
     - name: "another-repo"
       path: "/path/to/another/repository"
+  
+  # Discovery patterns - automatically find all Git repositories in these directories
+  # Each directory will be scanned recursively for Git repositories
+  discover:
+    - "/home/user/Code"  # Discover all repos in the Code directory
+    # - "/path/to/other/directory"  # Add more directories as needed
 ```
 
 ### Docker Compose

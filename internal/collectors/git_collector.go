@@ -19,10 +19,11 @@ import (
 )
 
 type GitCollector struct {
-	config  *config.Config
-	metrics *metrics.GitRegistry
-	app     *app.App
-	done    chan struct{}
+	config      *config.Config
+	metrics     *metrics.GitRegistry
+	app         *app.App
+	done        chan struct{}
+	repositories []config.RepositoryConfig // Cached list of expanded repositories
 }
 
 func NewGitCollector(cfg *config.Config, metricsRegistry *metrics.GitRegistry, app *app.App) *GitCollector {
@@ -35,6 +36,16 @@ func NewGitCollector(cfg *config.Config, metricsRegistry *metrics.GitRegistry, a
 }
 
 func (gc *GitCollector) Start(ctx context.Context) {
+	// Expand repositories once at startup and cache them
+	var err error
+	gc.repositories, err = gc.config.ExpandRepositories()
+	if err != nil {
+		slog.Error("Failed to expand repositories at startup", "error", err)
+		// Continue with empty list - will retry on next expansion
+		gc.repositories = []config.RepositoryConfig{}
+	} else {
+		slog.Info("Discovered repositories", "count", len(gc.repositories))
+	}
 	go gc.run(ctx)
 }
 
@@ -72,13 +83,27 @@ func (gc *GitCollector) collectMetrics(ctx context.Context) {
 		defer span.End()
 	}
 
-	for _, repo := range gc.config.Git.Repositories {
+	// Use cached repositories (expanded at startup)
+	// If expansion failed at startup, try again
+	if len(gc.repositories) == 0 {
+		var err error
+		gc.repositories, err = gc.config.ExpandRepositories()
+		if err != nil {
+			slog.Error("Failed to expand repositories", "error", err)
+			if span != nil {
+				span.RecordError(err, attribute.String("operation", "expand_repositories"))
+			}
+			return
+		}
+	}
+
+	for _, repo := range gc.repositories {
 		gc.collectRepositoryMetrics(spanCtx, repo)
 	}
 
 	if span != nil {
 		span.AddEvent("all_repositories_collected",
-			attribute.Int("repository_count", len(gc.config.Git.Repositories)),
+			attribute.Int("repository_count", len(gc.repositories)),
 		)
 	}
 }

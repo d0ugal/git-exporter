@@ -3,10 +3,12 @@ package config
 import (
 	"fmt"
 	"os"
+	"path/filepath"
 	"strconv"
 	"time"
 
 	promexporter_config "github.com/d0ugal/promexporter/config"
+	"github.com/go-git/go-git/v5"
 	"gopkg.in/yaml.v3"
 )
 
@@ -21,6 +23,7 @@ type Config struct {
 
 type GitConfig struct {
 	Repositories []RepositoryConfig `yaml:"repositories"`
+	Discover     []string           `yaml:"discover"` // Directories to scan for Git repositories
 }
 
 type RepositoryConfig struct {
@@ -221,10 +224,12 @@ func (c *Config) validateMetricsConfig() error {
 }
 
 func (c *Config) validateGitConfig() error {
-	if len(c.Git.Repositories) == 0 {
-		return fmt.Errorf("at least one git repository must be configured")
+	// At least one repository or discovery pattern must be configured
+	if len(c.Git.Repositories) == 0 && len(c.Git.Discover) == 0 {
+		return fmt.Errorf("at least one git repository or discovery pattern must be configured")
 	}
 
+	// Validate explicit repositories
 	for i, repo := range c.Git.Repositories {
 		if repo.Name == "" {
 			return fmt.Errorf("repository[%d]: name is required", i)
@@ -234,11 +239,133 @@ func (c *Config) validateGitConfig() error {
 		}
 	}
 
+	// Validate discovery paths
+	for i, path := range c.Git.Discover {
+		if path == "" {
+			return fmt.Errorf("discover[%d]: path is required", i)
+		}
+	}
+
 	return nil
 }
 
 // GetDefaultInterval returns the default collection interval
 func (c *Config) GetDefaultInterval() int {
 	return int(c.Metrics.Collection.DefaultInterval.Seconds())
+}
+
+// ExpandRepositories expands discovery patterns into actual repository configurations
+// and returns a combined list of explicit repositories and discovered ones
+func (c *Config) ExpandRepositories() ([]RepositoryConfig, error) {
+	var allRepos []RepositoryConfig
+
+	// Add explicit repositories
+	allRepos = append(allRepos, c.Git.Repositories...)
+
+	// Discover repositories from patterns
+	for _, discoverPath := range c.Git.Discover {
+		repos, err := discoverRepositories(discoverPath)
+		if err != nil {
+			return nil, fmt.Errorf("failed to discover repositories in %s: %w", discoverPath, err)
+		}
+		allRepos = append(allRepos, repos...)
+	}
+
+	return allRepos, nil
+}
+
+// discoverRepositories scans a directory for Git repositories
+// It looks for directories that contain a .git subdirectory or are bare repositories
+func discoverRepositories(rootPath string) ([]RepositoryConfig, error) {
+	var repos []RepositoryConfig
+
+	// Check if the discovery path exists
+	if _, err := os.Stat(rootPath); os.IsNotExist(err) {
+		// Path doesn't exist - return empty list (not an error, just log a warning)
+		return repos, nil
+	}
+
+	// Check if the root path itself is a Git repository
+	if isGitRepository(rootPath) {
+		repoName := filepath.Base(rootPath)
+		repos = append(repos, RepositoryConfig{
+			Name: repoName,
+			Path: rootPath,
+		})
+		// If root is a Git repo, don't walk into it
+		return repos, nil
+	}
+
+	// Walk the directory tree looking for Git repositories
+	err := filepath.Walk(rootPath, func(path string, info os.FileInfo, err error) error {
+		if err != nil {
+			// Skip directories we can't access
+			return nil
+		}
+
+		// Skip the root path itself (already checked)
+		if path == rootPath {
+			return nil
+		}
+
+		// Only check directories
+		if !info.IsDir() {
+			return nil
+		}
+
+		// Check if this directory is a Git repository
+		if isGitRepository(path) {
+			// Get relative path from root for the repository name
+			relPath, err := filepath.Rel(rootPath, path)
+			if err != nil {
+				// If we can't get relative path, use the base name
+				relPath = filepath.Base(path)
+			}
+			// Use forward slashes for cleaner names
+			repoName := filepath.ToSlash(relPath)
+			repos = append(repos, RepositoryConfig{
+				Name: repoName,
+				Path: path,
+			})
+			// Skip walking into this directory's subdirectories
+			return filepath.SkipDir
+		}
+
+		return nil
+	})
+
+	return repos, err
+}
+
+// isGitRepository checks if a path is a Git repository
+// It checks for both regular repositories (.git directory) and bare repositories (.git file or bare repo structure)
+func isGitRepository(path string) bool {
+	gitDir := filepath.Join(path, ".git")
+	gitDirInfo, err := os.Stat(gitDir)
+	if err != nil {
+		return false
+	}
+
+	// Check if .git is a directory (regular repository) or a file (worktree)
+	if gitDirInfo.IsDir() {
+		// Check for bare repository indicators
+		headFile := filepath.Join(gitDir, "HEAD")
+		configFile := filepath.Join(gitDir, "config")
+		if _, err := os.Stat(headFile); err == nil {
+			if _, err := os.Stat(configFile); err == nil {
+				// Try to open with go-git to verify it's a valid repository
+				_, err := git.PlainOpen(path)
+				return err == nil
+			}
+		}
+	} else {
+		// .git is a file (worktree), check if it points to a valid git dir
+		// For simplicity, if .git exists as a file, we consider it a repository
+		// Try to open with go-git to verify it's a valid repository
+		_, err := git.PlainOpen(path)
+		return err == nil
+	}
+
+	return false
 }
 
