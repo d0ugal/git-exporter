@@ -7,7 +7,6 @@ import (
 	"os"
 	"path/filepath"
 	"strings"
-	"sync"
 	"time"
 
 	"github.com/d0ugal/git-exporter/internal/config"
@@ -23,7 +22,6 @@ type GitCollector struct {
 	config  *config.Config
 	metrics *metrics.GitRegistry
 	app     *app.App
-	mu      sync.RWMutex
 	done    chan struct{}
 }
 
