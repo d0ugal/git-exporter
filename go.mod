@@ -5,7 +5,7 @@ go 1.25
 toolchain go1.25.4
 
 require (
-	github.com/d0ugal/promexporter v1.11.2
+	github.com/d0ugal/promexporter v1.12.0
 	github.com/go-git/go-git/v5 v5.16.3
 	github.com/prometheus/client_golang v1.23.2
 	go.opentelemetry.io/otel v1.38.0
@@ -30,7 +30,6 @@ require (
 	github.com/gin-contrib/sse v1.1.0 // indirect
 	github.com/gin-gonic/gin v1.11.0 // indirect
 	github.com/go-git/gcfg v1.5.1-0.20230307220236-3a3c6141e376 // indirect
-	github.com/go-git/gcfg/v2 v2.0.2 // indirect
 	github.com/go-git/go-billy/v5 v5.6.2 // indirect
 	github.com/go-logr/logr v1.4.3 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
