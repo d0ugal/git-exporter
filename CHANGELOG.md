@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.1.1](https://github.com/d0ugal/git-exporter/compare/v0.1.0...v0.1.1) (2025-11-11)
+
+
+### Bug Fixes
+
+* update google.golang.org/genproto/googleapis/api digest to 83f4791 ([#19](https://github.com/d0ugal/git-exporter/issues/19)) ([5d92b9f](https://github.com/d0ugal/git-exporter/commit/5d92b9f2d7b1236c038095ca4214a27127232fea))
+* update google.golang.org/genproto/googleapis/api digest to 95abcf5 ([#23](https://github.com/d0ugal/git-exporter/issues/23)) ([37d38fb](https://github.com/d0ugal/git-exporter/commit/37d38fb4b4137ecdb870e6b5b2b37113987ee958))
+* update google.golang.org/genproto/googleapis/rpc digest to 83f4791 ([#20](https://github.com/d0ugal/git-exporter/issues/20)) ([2abfd4e](https://github.com/d0ugal/git-exporter/commit/2abfd4eafd8c5237dc1b7482ccf67aa9fd74a1fe))
+* update google.golang.org/genproto/googleapis/rpc digest to 95abcf5 ([#24](https://github.com/d0ugal/git-exporter/issues/24)) ([e65bbb4](https://github.com/d0ugal/git-exporter/commit/e65bbb4fa6962492ed68c774a5e08ea4209fc6e1))
+* update module github.com/d0ugal/promexporter to v1.12.1 ([#22](https://github.com/d0ugal/git-exporter/issues/22)) ([69140e7](https://github.com/d0ugal/git-exporter/commit/69140e7abc6478ff8f56199740b0e2c66ea3bb4a))
+
 ## [0.1.0](https://github.com/d0ugal/git-exporter/compare/v0.0.1...v0.1.0) (2025-11-10)
 
 
