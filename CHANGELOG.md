@@ -1,5 +1,27 @@
 # Changelog
 
+## [0.2.0](https://github.com/d0ugal/git-exporter/compare/v0.1.0...v0.2.0) (2025-11-12)
+
+
+### Features
+
+* **ci:** ensure CI runs for release-please branches and PRs ([5ed265c](https://github.com/d0ugal/git-exporter/commit/5ed265cae3c7c911ebc759ec3bc60e185d8774a9))
+* **ci:** ensure CI runs for release-please branches and PRs ([2b70c50](https://github.com/d0ugal/git-exporter/commit/2b70c50ec0b11dc6c2d2f38dca8c082a6029131e))
+* **ci:** use RELEASE_TOKEN secret for release-please ([#27](https://github.com/d0ugal/git-exporter/issues/27)) ([8bcdf6a](https://github.com/d0ugal/git-exporter/commit/8bcdf6acaaa6c291bbdaa73c25652bf9e253acef))
+
+
+### Bug Fixes
+
+* **ci:** check github.head_ref for release-please PR detection ([735c105](https://github.com/d0ugal/git-exporter/commit/735c105250b0350d898c5333f0bf005cddf8bc65))
+* update google.golang.org/genproto/googleapis/api digest to 83f4791 ([#19](https://github.com/d0ugal/git-exporter/issues/19)) ([5d92b9f](https://github.com/d0ugal/git-exporter/commit/5d92b9f2d7b1236c038095ca4214a27127232fea))
+* update google.golang.org/genproto/googleapis/api digest to 95abcf5 ([#23](https://github.com/d0ugal/git-exporter/issues/23)) ([37d38fb](https://github.com/d0ugal/git-exporter/commit/37d38fb4b4137ecdb870e6b5b2b37113987ee958))
+* update google.golang.org/genproto/googleapis/rpc digest to 83f4791 ([#20](https://github.com/d0ugal/git-exporter/issues/20)) ([2abfd4e](https://github.com/d0ugal/git-exporter/commit/2abfd4eafd8c5237dc1b7482ccf67aa9fd74a1fe))
+* update google.golang.org/genproto/googleapis/rpc digest to 95abcf5 ([#24](https://github.com/d0ugal/git-exporter/issues/24)) ([e65bbb4](https://github.com/d0ugal/git-exporter/commit/e65bbb4fa6962492ed68c774a5e08ea4209fc6e1))
+* update module github.com/d0ugal/promexporter to v1.12.1 ([#22](https://github.com/d0ugal/git-exporter/issues/22)) ([69140e7](https://github.com/d0ugal/git-exporter/commit/69140e7abc6478ff8f56199740b0e2c66ea3bb4a))
+* update module github.com/d0ugal/promexporter to v1.12.2 ([#28](https://github.com/d0ugal/git-exporter/issues/28)) ([68e0be2](https://github.com/d0ugal/git-exporter/commit/68e0be2ced1b29c666f13515d50e85ee3e6fe215))
+* update module golang.org/x/crypto to v0.44.0 ([#25](https://github.com/d0ugal/git-exporter/issues/25)) ([1320626](https://github.com/d0ugal/git-exporter/commit/132062603dce3e725c4c87b8c6dd55cae369fe9d))
+* update module golang.org/x/net to v0.47.0 ([#26](https://github.com/d0ugal/git-exporter/issues/26)) ([278649d](https://github.com/d0ugal/git-exporter/commit/278649d372199c0ac7108ba5e26cd2555020e1f9))
+
 ## [0.1.0](https://github.com/d0ugal/git-exporter/compare/v0.0.1...v0.1.0) (2025-11-10)
 
 
