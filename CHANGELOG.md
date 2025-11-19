@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.4](https://github.com/d0ugal/git-exporter/compare/v0.2.3...v0.2.4) (2025-11-19)
+
+
+### Bug Fixes
+
+* update module github.com/cyphar/filepath-securejoin to v0.6.1 ([#41](https://github.com/d0ugal/git-exporter/issues/41)) ([71ee6de](https://github.com/d0ugal/git-exporter/commit/71ee6de678eac06b45fc9c9311fa00fa5a97872a))
+* update module golang.org/x/crypto to v0.45.0 ([#43](https://github.com/d0ugal/git-exporter/issues/43)) ([106d186](https://github.com/d0ugal/git-exporter/commit/106d186cde4228cc16b4f1d6eba80f45dc70dc58))
+
 ## [0.2.3](https://github.com/d0ugal/git-exporter/compare/v0.2.2...v0.2.3) (2025-11-18)
 
 
