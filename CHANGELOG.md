@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.5](https://github.com/d0ugal/git-exporter/compare/v0.2.4...v0.2.5) (2025-11-20)
+
+
+### Bug Fixes
+
+* resolve YAML linting issues ([319f635](https://github.com/d0ugal/git-exporter/commit/319f6355bd6dc24a1cfe421eb3683677e7112416))
+* update module github.com/d0ugal/promexporter to v1.13.3 ([#45](https://github.com/d0ugal/git-exporter/issues/45)) ([046acde](https://github.com/d0ugal/git-exporter/commit/046acde3148927bcd97c35d0418fb1ecba58612b))
+
 ## [0.2.4](https://github.com/d0ugal/git-exporter/compare/v0.2.3...v0.2.4) (2025-11-19)
 
 
