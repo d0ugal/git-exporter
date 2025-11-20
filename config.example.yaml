@@ -15,10 +15,9 @@ git:
   repositories:
     - name: "hoose"
       path: "/usr/share/hoose"
-  
+
   # Discovery patterns - automatically find all Git repositories in these directories
   # Each directory will be scanned recursively for Git repositories
   discover:
     - "/home/hoose/Code"  # Discover all repos in the Code directory
     # - "/path/to/other/directory"  # Add more directories as needed
-
