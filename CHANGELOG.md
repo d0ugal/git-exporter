@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.7](https://github.com/d0ugal/git-exporter/compare/v0.2.6...v0.2.7) (2025-11-20)
+
+
+### Bug Fixes
+
+* **ci:** prevent dev-build from running on PRs and fix YAML syntax ([39178e9](https://github.com/d0ugal/git-exporter/commit/39178e9686c41ec7f9634eece41349a8e0e52294))
+* **ci:** prevent dev-build from running on PRs and fix YAML syntax ([4c1ea60](https://github.com/d0ugal/git-exporter/commit/4c1ea60ae35f47d0feb2cd23b8df3b1d11285ecb))
+
 ## [0.2.6](https://github.com/d0ugal/git-exporter/compare/v0.2.5...v0.2.6) (2025-11-20)
 
 
