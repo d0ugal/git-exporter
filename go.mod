@@ -5,7 +5,7 @@ go 1.25
 toolchain go1.25.4
 
 require (
-	github.com/d0ugal/promexporter v1.13.5
+	github.com/d0ugal/promexporter v1.13.6
 	github.com/go-git/go-git/v5 v5.16.3
 	github.com/prometheus/client_golang v1.23.2
 	go.opentelemetry.io/otel v1.38.0
@@ -58,8 +58,8 @@ require (
 	github.com/prometheus/client_model v0.6.2 // indirect
 	github.com/prometheus/common v0.67.4 // indirect
 	github.com/prometheus/procfs v0.19.2 // indirect
-	github.com/quic-go/qpack v0.5.1 // indirect
-	github.com/quic-go/quic-go v0.56.0 // indirect
+	github.com/quic-go/qpack v0.6.0 // indirect
+	github.com/quic-go/quic-go v0.57.0 // indirect
 	github.com/sergi/go-diff v1.4.0 // indirect
 	github.com/skeema/knownhosts v1.3.2 // indirect
 	github.com/twitchyliquid64/golang-asm v0.15.1 // indirect
