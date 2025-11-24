@@ -6,7 +6,7 @@ toolchain go1.25.4
 
 require (
 	github.com/d0ugal/promexporter v1.13.6
-	github.com/go-git/go-git/v5 v5.16.3
+	github.com/go-git/go-git/v5 v5.16.4
 	github.com/prometheus/client_golang v1.23.2
 	go.opentelemetry.io/otel v1.38.0
 	gopkg.in/yaml.v3 v3.0.1
