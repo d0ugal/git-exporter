@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.2.9](https://github.com/d0ugal/git-exporter/compare/v0.2.8...v0.2.9) (2025-11-25)
+
+
+### Bug Fixes
+
+* update google.golang.org/genproto/googleapis/api digest to 79d6a2a ([b56ee92](https://github.com/d0ugal/git-exporter/commit/b56ee92d96e549148cc0dfa147360015edc73b7d))
+* update google.golang.org/genproto/googleapis/rpc digest to 79d6a2a ([c67a0f1](https://github.com/d0ugal/git-exporter/commit/c67a0f1671a85216573ce30d4334b1f327e68103))
+* update module github.com/go-git/go-git/v5 to v5.16.4 ([d54e23d](https://github.com/d0ugal/git-exporter/commit/d54e23d03a1f913765a755048dccd547ef3e2788))
+
 ## [0.2.8](https://github.com/d0ugal/git-exporter/compare/v0.2.7...v0.2.8) (2025-11-21)
 
 
