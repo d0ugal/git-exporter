@@ -1,5 +1,5 @@
 # Build stage
-FROM golang:1.25.5-alpine AS builder
+FROM golang:1.25.4-alpine AS builder
 
 WORKDIR /app
 
@@ -32,7 +32,7 @@ RUN VERSION=${VERSION:-$(git describe --tags --always --dirty 2>/dev/null || ech
     -o git-exporter ./cmd/main.go
 
 # Final stage
-FROM alpine:3.23.0
+FROM alpine:3.22.2
 
 # Install git for git operations in the container
 RUN apk --no-cache add ca-certificates git
