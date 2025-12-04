@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.2.13](https://github.com/d0ugal/git-exporter/compare/v0.2.12...v0.2.13) (2025-12-04)
+
+
+### Bug Fixes
+
+* update dependency go to v1.25.5 ([27db362](https://github.com/d0ugal/git-exporter/commit/27db362886bba210a9a79062f8ed99b7e5750dc4))
+* update google.golang.org/genproto/googleapis/api digest to ff82c1b ([8bee5dd](https://github.com/d0ugal/git-exporter/commit/8bee5ddd98b9736cf030513ec483dd0526ea8c95))
+* update google.golang.org/genproto/googleapis/rpc digest to ff82c1b ([898067e](https://github.com/d0ugal/git-exporter/commit/898067ea968ec0e3cd8118dcda02b0147599bd47))
+* update module github.com/d0ugal/promexporter to v1.14.3 ([27b5a78](https://github.com/d0ugal/git-exporter/commit/27b5a78a9634f7d3e1895d109cb684887a883027))
+
 ## [0.2.12](https://github.com/d0ugal/git-exporter/compare/v0.2.11...v0.2.12) (2025-12-01)
 
 
