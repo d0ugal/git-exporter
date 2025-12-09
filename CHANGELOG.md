@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.2.16](https://github.com/d0ugal/git-exporter/compare/v0.2.15...v0.2.16) (2025-12-09)
+
+
+### Bug Fixes
+
+* **ci:** add GOMODCACHE env var to fix permission denied error ([bac9d8c](https://github.com/d0ugal/git-exporter/commit/bac9d8c20a4de7f1fbd10749a2f55df8a3257d47))
+* update module golang.org/x/crypto to v0.46.0 ([efb9ba7](https://github.com/d0ugal/git-exporter/commit/efb9ba7533f411c5e7536f9901b1fe8fb369f6bc))
+* update module golang.org/x/net to v0.48.0 ([a1ac3b7](https://github.com/d0ugal/git-exporter/commit/a1ac3b76a2c942047bfe4ed9842d50721ef24616))
+* update module golang.org/x/sys to v0.39.0 ([5e3ee77](https://github.com/d0ugal/git-exporter/commit/5e3ee779ee5789d5a264e8a744a1f50613f1bcaa))
+* update module golang.org/x/text to v0.32.0 ([a34ee22](https://github.com/d0ugal/git-exporter/commit/a34ee22ef10f0d8362fde6fa7e8ba94d22672297))
+* update opentelemetry-go monorepo to v1.39.0 ([981da1c](https://github.com/d0ugal/git-exporter/commit/981da1c440e6009c3e258a69d9d3c8afe060f962))
+* update opentelemetry-go-contrib monorepo to v0.64.0 ([7cdc88d](https://github.com/d0ugal/git-exporter/commit/7cdc88d31bf8372ef26cdd14c5c50c0bce7c1588))
+
 ## [0.2.15](https://github.com/d0ugal/git-exporter/compare/v0.2.14...v0.2.15) (2025-12-06)
 
 
