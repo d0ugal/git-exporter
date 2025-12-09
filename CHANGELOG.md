@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.2.15](https://github.com/d0ugal/git-exporter/compare/v0.2.14...v0.2.15) (2025-12-06)
+
+
+### Bug Fixes
+
+* update module github.com/go-git/go-billy/v5 to v5.7.0 ([0784ab4](https://github.com/d0ugal/git-exporter/commit/0784ab4307db2ff0b1e79cd5a6787384f5303bf6))
+
+## [0.2.14](https://github.com/d0ugal/git-exporter/compare/v0.2.13...v0.2.14) (2025-12-04)
+
+
+### Bug Fixes
+
+* **workflows:** fix workflow syntax errors, revert Alpine, and enable PR builds ([94ab404](https://github.com/d0ugal/git-exporter/commit/94ab4044ddca55e4033575f31eda2a78e52bfc70))
+
 ## [0.2.13](https://github.com/d0ugal/git-exporter/compare/v0.2.12...v0.2.13) (2025-12-04)
 
 
