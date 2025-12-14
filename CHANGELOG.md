@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.2.18](https://github.com/d0ugal/git-exporter/compare/v0.2.17...v0.2.18) (2025-12-14)
+
+
+### Bug Fixes
+
+* update google.golang.org/genproto/googleapis/api digest to 97cd9d5 ([8a7544b](https://github.com/d0ugal/git-exporter/commit/8a7544beeb3c13f1923a8a2fc8b800e87199e384))
+* update google.golang.org/genproto/googleapis/rpc digest to 97cd9d5 ([1042429](https://github.com/d0ugal/git-exporter/commit/1042429e39e181c6ba9c3d601f24dafde45bac8d))
+* update module github.com/d0ugal/promexporter to v1.14.5 ([aee1359](https://github.com/d0ugal/git-exporter/commit/aee1359b454aa1c128f4f7d8bb0d7fee7ed5abb4))
+* update module github.com/d0ugal/promexporter to v1.14.6 ([ef90338](https://github.com/d0ugal/git-exporter/commit/ef903383b2b70cc9e48b908a1a1d4160e7c68ddf))
+* update module github.com/gabriel-vasile/mimetype to v1.4.12 ([6d3b9a1](https://github.com/d0ugal/git-exporter/commit/6d3b9a1bca15e9289ce6964fd91940c63d4d73f0))
+* update module github.com/go-playground/validator/v10 to v10.29.0 ([4b7362d](https://github.com/d0ugal/git-exporter/commit/4b7362d951c264cff4cde328feb68b586dac91f2))
+* update module google.golang.org/protobuf to v1.36.11 ([076f255](https://github.com/d0ugal/git-exporter/commit/076f255bde3e852fa7ca1dd1972ddaeef860184f))
+
 ## [0.2.17](https://github.com/d0ugal/git-exporter/compare/v0.2.16...v0.2.17) (2025-12-10)
 
 
