@@ -32,7 +32,7 @@ RUN VERSION=${VERSION:-$(git describe --tags --always --dirty 2>/dev/null || ech
     -o git-exporter ./cmd/main.go
 
 # Final stage
-FROM alpine:3.22.2
+FROM alpine:3.23.2
 
 # Install git for git operations in the container
 RUN apk --no-cache add ca-certificates git
