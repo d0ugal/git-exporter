@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.20](https://github.com/d0ugal/git-exporter/compare/v0.2.19...v0.2.20) (2025-12-20)
+
+
+### Bug Fixes
+
+* update module github.com/d0ugal/promexporter to v1.14.7 ([a3642da](https://github.com/d0ugal/git-exporter/commit/a3642dab5aafeffa233dcb5a117780abe7196ba1))
+* update module github.com/go-git/gcfg to v2 ([83b3bf0](https://github.com/d0ugal/git-exporter/commit/83b3bf083034a8fd522aee41bab7269f5b39248b))
+
 ## [0.2.19](https://github.com/d0ugal/git-exporter/compare/v0.2.18...v0.2.19) (2025-12-17)
 
 
