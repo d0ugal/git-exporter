@@ -5,7 +5,7 @@ go 1.25
 toolchain go1.25.5
 
 require (
-	github.com/d0ugal/promexporter v1.14.8
+	github.com/d0ugal/promexporter v1.14.9
 	github.com/go-git/go-git/v5 v5.16.4
 	github.com/prometheus/client_golang v1.23.2
 	go.opentelemetry.io/otel v1.39.0
@@ -35,7 +35,7 @@ require (
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-playground/locales v0.14.1 // indirect
 	github.com/go-playground/universal-translator v0.18.1 // indirect
-	github.com/go-playground/validator/v10 v10.29.0 // indirect
+	github.com/go-playground/validator/v10 v10.30.0 // indirect
 	github.com/goccy/go-json v0.10.5 // indirect
 	github.com/goccy/go-yaml v1.19.1 // indirect
 	github.com/golang/groupcache v0.0.0-20241129210726-2c02b8208cf8 // indirect
