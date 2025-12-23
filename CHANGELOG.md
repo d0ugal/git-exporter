@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.2.23](https://github.com/d0ugal/git-exporter/compare/v0.2.22...v0.2.23) (2025-12-23)
+
+
+### Bug Fixes
+
+* update google.golang.org/genproto/googleapis/api digest to 0a764e5 ([b96c7fa](https://github.com/d0ugal/git-exporter/commit/b96c7fa8d0bb9e64bd52dd3d2d4f326400441652))
+* update google.golang.org/genproto/googleapis/rpc digest to 0a764e5 ([75e98f6](https://github.com/d0ugal/git-exporter/commit/75e98f690db4b4879a3c7a21e4b9e5643fa56747))
+* update module github.com/cloudflare/circl to v1.6.2 ([6025675](https://github.com/d0ugal/git-exporter/commit/6025675ff019ca1decea2ce00386c65a67483f84))
+* update module github.com/d0ugal/promexporter to v1.14.10 ([c23f035](https://github.com/d0ugal/git-exporter/commit/c23f035de8290278c616667845f3faff5cbc70d3))
+* update module google.golang.org/grpc to v1.78.0 ([d98f527](https://github.com/d0ugal/git-exporter/commit/d98f52765d2722318413d8cd7f43274262131fe4))
+
 ## [0.2.22](https://github.com/d0ugal/git-exporter/compare/v0.2.21...v0.2.22) (2025-12-21)
 
 
