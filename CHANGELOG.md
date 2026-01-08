@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.28](https://github.com/d0ugal/git-exporter/compare/v0.2.27...v0.2.28) (2026-01-08)
+
+
+### Bug Fixes
+
+* update module github.com/goccy/go-yaml to v1.19.2 ([5302e28](https://github.com/d0ugal/git-exporter/commit/5302e28e28cd144844bebd847c4171c3a508081e))
+
 ## [0.2.27](https://github.com/d0ugal/git-exporter/compare/v0.2.26...v0.2.27) (2026-01-06)
 
 
