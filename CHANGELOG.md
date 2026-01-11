@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.32](https://github.com/d0ugal/git-exporter/compare/v0.2.31...v0.2.32) (2026-01-11)
+
+
+### Bug Fixes
+
+* update module github.com/quic-go/quic-go to v0.59.0 ([58ab405](https://github.com/d0ugal/git-exporter/commit/58ab4058038f710eff3dc1bc3250024801c9b9aa))
+
 ## [0.2.31](https://github.com/d0ugal/git-exporter/compare/v0.2.30...v0.2.31) (2026-01-10)
 
 
