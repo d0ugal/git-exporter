@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.2.34](https://github.com/d0ugal/git-exporter/compare/v0.2.33...v0.2.34) (2026-01-14)
+
+
+### Bug Fixes
+
+* update google.golang.org/genproto/googleapis/api digest to 99fd39f ([cbd0efe](https://github.com/d0ugal/git-exporter/commit/cbd0efef2d1462a2f706e78d36cb93dd68e31196))
+* update google.golang.org/genproto/googleapis/rpc digest to 99fd39f ([2393f82](https://github.com/d0ugal/git-exporter/commit/2393f8295e585b13dac114c4aab8f6f010f7e29f))
+* update module github.com/d0ugal/promexporter to v1.14.18 ([a0b09de](https://github.com/d0ugal/git-exporter/commit/a0b09de046aa79b43b91075960c657d3761ed964))
+* update module github.com/d0ugal/promexporter to v1.14.19 ([2c07709](https://github.com/d0ugal/git-exporter/commit/2c07709a35e0b931ae9bcffdf7442b8ed6bc3fee))
+* update module github.com/d0ugal/promexporter to v1.14.20 ([9e5914d](https://github.com/d0ugal/git-exporter/commit/9e5914de0c4c233484cce86720ae96d14c2119b5))
+* update module golang.org/x/crypto to v0.47.0 ([9556a9f](https://github.com/d0ugal/git-exporter/commit/9556a9f0750c954d4b299ea6a5b96c3ac184076f))
+* update module golang.org/x/net to v0.49.0 ([36f36ea](https://github.com/d0ugal/git-exporter/commit/36f36ea25cd7c0c6b777a5f4b4b3c8855bf4ed67))
+
 ## [0.2.33](https://github.com/d0ugal/git-exporter/compare/v0.2.32...v0.2.33) (2026-01-11)
 
 
