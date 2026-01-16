@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.2.35](https://github.com/d0ugal/git-exporter/compare/v0.2.34...v0.2.35) (2026-01-16)
+
+
+### Bug Fixes
+
+* update dependency go to v1.25.6 ([920e844](https://github.com/d0ugal/git-exporter/commit/920e84479d8b21abf710cd2cad4d300e6f7cbd57))
+* update google.golang.org/genproto/googleapis/api digest to 3f89685 ([acb43e5](https://github.com/d0ugal/git-exporter/commit/acb43e5750f82680af4d0042c065cd613b7e4e12))
+* update google.golang.org/genproto/googleapis/rpc digest to 3f89685 ([df384ee](https://github.com/d0ugal/git-exporter/commit/df384eee836376c4a3ab41259f4aae97c5863fda))
+* update module github.com/klauspost/compress to v1.18.3 ([babef24](https://github.com/d0ugal/git-exporter/commit/babef24f2c7cc71e2f1b47b53fe8562884576592))
+
 ## [0.2.34](https://github.com/d0ugal/git-exporter/compare/v0.2.33...v0.2.34) (2026-01-14)
 
 
