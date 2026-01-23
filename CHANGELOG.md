@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.2.37](https://github.com/d0ugal/git-exporter/compare/v0.2.36...v0.2.37) (2026-01-23)
+
+
+### Bug Fixes
+
+* update google.golang.org/genproto/googleapis/api digest to 409b4a9 ([6bfce58](https://github.com/d0ugal/git-exporter/commit/6bfce584b3360d1a4ce12c68d7889ef219e88013))
+* update google.golang.org/genproto/googleapis/api digest to 8e98ce8 ([05e9365](https://github.com/d0ugal/git-exporter/commit/05e9365c5895f0c6f4e42427494fb80db25d82d3))
+* update google.golang.org/genproto/googleapis/api digest to b8f7ae3 ([3b235af](https://github.com/d0ugal/git-exporter/commit/3b235aff84d63af300cf8b723ff2f03ee83133f4))
+* update google.golang.org/genproto/googleapis/rpc digest to 8e98ce8 ([3cfd6f2](https://github.com/d0ugal/git-exporter/commit/3cfd6f2ce24bd8ebe27a515c6c5d0865b46718f7))
+* update google.golang.org/genproto/googleapis/rpc digest to b8f7ae3 ([06bf4f0](https://github.com/d0ugal/git-exporter/commit/06bf4f08a02e3923c85ee9c0cc45ebcc00ad2c78))
+* update module github.com/bytedance/sonic to v1.15.0 ([5cc37ed](https://github.com/d0ugal/git-exporter/commit/5cc37edcd05448819baf31a76a239b3b0e67521a))
+* update module github.com/cloudflare/circl to v1.6.3 ([852a53a](https://github.com/d0ugal/git-exporter/commit/852a53ac5b1d9db59996609c29e44deccf78fa1f))
+* update module github.com/d0ugal/promexporter to v1.14.22 ([7039c5f](https://github.com/d0ugal/git-exporter/commit/7039c5fe8888b830b3958dc7eab34ecd6993b248))
+* update module github.com/d0ugal/promexporter to v1.14.23 ([6db7f35](https://github.com/d0ugal/git-exporter/commit/6db7f35595147beea542c6293aad7bf063a3f279))
+* update module github.com/d0ugal/promexporter to v1.14.24 ([430a921](https://github.com/d0ugal/git-exporter/commit/430a9211f4e8ff54d35c4ed9eee12877b077b7df))
+* update module github.com/grpc-ecosystem/grpc-gateway/v2 to v2.27.5 ([bbf14d3](https://github.com/d0ugal/git-exporter/commit/bbf14d3ff80e95ace742c23d7533634166759585))
+
 ## [0.2.36](https://github.com/d0ugal/git-exporter/compare/v0.2.35...v0.2.36) (2026-01-17)
 
 
