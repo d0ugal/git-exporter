@@ -5,7 +5,7 @@ go 1.25
 toolchain go1.25.6
 
 require (
-	github.com/d0ugal/promexporter v1.14.24
+	github.com/d0ugal/promexporter v1.14.25
 	github.com/go-git/go-git/v5 v5.16.4
 	github.com/prometheus/client_golang v1.23.2
 	go.opentelemetry.io/otel v1.39.0
@@ -82,7 +82,7 @@ require (
 	golang.org/x/sys v0.40.0 // indirect
 	golang.org/x/text v0.33.0 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20260128011058-8636f8732409 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20260126211449-d11affda4bed // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20260128011058-8636f8732409 // indirect
 	google.golang.org/grpc v1.78.0 // indirect
 	google.golang.org/protobuf v1.36.11 // indirect
 	gopkg.in/warnings.v0 v0.1.2 // indirect
