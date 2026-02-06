@@ -1,5 +1,25 @@
 # Changelog
 
+## [0.2.38](https://github.com/d0ugal/git-exporter/compare/v0.2.37...v0.2.38) (2026-02-06)
+
+
+### Bug Fixes
+
+* update dependency go to v1.25.7 ([1421632](https://github.com/d0ugal/git-exporter/commit/142163216317d2ba68b1fd4d0020c9f33cee639f))
+* update google.golang.org/genproto/googleapis/api digest to 546029d ([4e18d5f](https://github.com/d0ugal/git-exporter/commit/4e18d5f63e0e0e441b7053db5af23bfba022bc86))
+* update google.golang.org/genproto/googleapis/api digest to 8636f87 ([1697940](https://github.com/d0ugal/git-exporter/commit/1697940f50e3520431a924c6bd8d587bde8861cd))
+* update google.golang.org/genproto/googleapis/api digest to ce8ad4c ([b0ef7ec](https://github.com/d0ugal/git-exporter/commit/b0ef7ec60d5f3b8c83374e9da590adb6fb1c6cca))
+* update google.golang.org/genproto/googleapis/api digest to d11affd ([f1a603e](https://github.com/d0ugal/git-exporter/commit/f1a603e42f4e3414f0f53f3ac924865bc0923c4c))
+* update google.golang.org/genproto/googleapis/rpc digest to d11affd ([154329b](https://github.com/d0ugal/git-exporter/commit/154329b1732d2882eb163232bca85fdae7608017))
+* update module github.com/d0ugal/promexporter to v1.14.25 ([bdedf81](https://github.com/d0ugal/git-exporter/commit/bdedf81d0268d5492ff592ccb17632989719942f))
+* update module github.com/d0ugal/promexporter to v1.14.26 ([27c104b](https://github.com/d0ugal/git-exporter/commit/27c104bb6c0c68c7dbf871c491c9c1c8e1c6a842))
+* update module github.com/d0ugal/promexporter to v2 ([8c32c99](https://github.com/d0ugal/git-exporter/commit/8c32c99d9734d36c4938f4ae730c7b7896a638d9))
+* update module github.com/gabriel-vasile/mimetype to v1.4.13 ([180a653](https://github.com/d0ugal/git-exporter/commit/180a653e440a555f262dfe02c93e1437aec10b6a))
+* update module github.com/grpc-ecosystem/grpc-gateway/v2 to v2.27.6 ([2718622](https://github.com/d0ugal/git-exporter/commit/2718622fb64236ad6df06035c9eb51b261a3d96d))
+* update module github.com/grpc-ecosystem/grpc-gateway/v2 to v2.27.7 ([dbca785](https://github.com/d0ugal/git-exporter/commit/dbca7852a28fca5417334d7c12a4bc542faf6602))
+* update opentelemetry-go monorepo to v1.40.0 ([7742555](https://github.com/d0ugal/git-exporter/commit/774255571afe8a71a529808e2337370ef624a09d))
+* update opentelemetry-go-contrib monorepo to v0.65.0 ([0020ee9](https://github.com/d0ugal/git-exporter/commit/0020ee95389098d1abdcbb981a3181fd9f195404))
+
 ## [0.2.37](https://github.com/d0ugal/git-exporter/compare/v0.2.36...v0.2.37) (2026-01-23)
 
 
