@@ -1,5 +1,27 @@
 # Changelog
 
+## [0.2.39](https://github.com/d0ugal/git-exporter/compare/v0.2.38...v0.2.39) (2026-02-18)
+
+
+### Bug Fixes
+
+* update dependency go to v1.26.0 ([ef0a5c7](https://github.com/d0ugal/git-exporter/commit/ef0a5c740db0b640159de6d03ef0cacb7f06a0d4))
+* update google.golang.org/genproto/googleapis/api digest to 42d3e9b ([54b816a](https://github.com/d0ugal/git-exporter/commit/54b816a358ab927a846e19d436365e715829e2e8))
+* update google.golang.org/genproto/googleapis/api digest to 4cfbd41 ([790f386](https://github.com/d0ugal/git-exporter/commit/790f386cb295043aabc79cd8e4aa1163fa148ea1))
+* update module github.com/go-git/go-git/v5 to v5.16.5 ([05ca131](https://github.com/d0ugal/git-exporter/commit/05ca13190e6c1818756460d71aaa17f942e9fcc0))
+* update module github.com/grpc-ecosystem/grpc-gateway/v2 to v2.27.8 ([3c2f192](https://github.com/d0ugal/git-exporter/commit/3c2f19250fe30934042fa1c6d804c934acd8b778))
+* update module github.com/grpc-ecosystem/grpc-gateway/v2 to v2.28.0 ([d664d86](https://github.com/d0ugal/git-exporter/commit/d664d86cad8e66fff53e594addf05339ddf791a4))
+* update module github.com/kevinburke/ssh_config to v1.5.0 ([acff98c](https://github.com/d0ugal/git-exporter/commit/acff98c3faa67898198a0e762053316d316ddc9b))
+* update module github.com/kevinburke/ssh_config to v1.6.0 ([a240034](https://github.com/d0ugal/git-exporter/commit/a240034f7f27077935c0b33738f6f23e72a80292))
+* update module github.com/klauspost/compress to v1.18.4 ([6168ca1](https://github.com/d0ugal/git-exporter/commit/6168ca1d6318934f0c79e20182cdb8ef2c1f6951))
+* update module golang.org/x/arch to v0.24.0 ([1ec287b](https://github.com/d0ugal/git-exporter/commit/1ec287b96d2b8db85105c0a47a603b82bad09dd7))
+* update module golang.org/x/crypto to v0.48.0 ([c4990da](https://github.com/d0ugal/git-exporter/commit/c4990da02b104fa1d1cef148530c74edc0078a7a))
+* update module golang.org/x/net to v0.50.0 ([c85cf8b](https://github.com/d0ugal/git-exporter/commit/c85cf8b0c78dc354a66d120a94e591ea703ff670))
+* update module golang.org/x/sys to v0.41.0 ([f58fe47](https://github.com/d0ugal/git-exporter/commit/f58fe4799155d9bad42ef8cf8e1c3bb95d44ce14))
+* update module golang.org/x/text to v0.34.0 ([d34adc9](https://github.com/d0ugal/git-exporter/commit/d34adc9942a3a58cc3fd3f761052bd21da16351c))
+* update module google.golang.org/grpc to v1.79.0 ([a5bbc6f](https://github.com/d0ugal/git-exporter/commit/a5bbc6f78d5fa6cbd7b15b7e6ce85a583b45fc9f))
+* update module google.golang.org/grpc to v1.79.1 ([c2350e8](https://github.com/d0ugal/git-exporter/commit/c2350e89f4bedcad19f55e4c7aae81045a5a2e4a))
+
 ## [0.2.38](https://github.com/d0ugal/git-exporter/compare/v0.2.37...v0.2.38) (2026-02-06)
 
 
