@@ -1,5 +1,36 @@
 # Changelog
 
+## [0.2.39](https://github.com/d0ugal/git-exporter/compare/v0.2.38...v0.2.39) (2026-02-28)
+
+
+### Bug Fixes
+
+* update dependency go to v1.26.0 ([ef0a5c7](https://github.com/d0ugal/git-exporter/commit/ef0a5c740db0b640159de6d03ef0cacb7f06a0d4))
+* update google.golang.org/genproto/googleapis/api digest to 2f722ef ([4518cbf](https://github.com/d0ugal/git-exporter/commit/4518cbf16cec435b2f9c05fb15b9302821a10325))
+* update google.golang.org/genproto/googleapis/api digest to 42d3e9b ([54b816a](https://github.com/d0ugal/git-exporter/commit/54b816a358ab927a846e19d436365e715829e2e8))
+* update google.golang.org/genproto/googleapis/api digest to 4cfbd41 ([790f386](https://github.com/d0ugal/git-exporter/commit/790f386cb295043aabc79cd8e4aa1163fa148ea1))
+* update google.golang.org/genproto/googleapis/api digest to a57be14 ([9b15989](https://github.com/d0ugal/git-exporter/commit/9b15989967fb79bf4d3b5b1fac78b12b881b62d1))
+* update module github.com/gin-gonic/gin to v1.12.0 ([6ad29e1](https://github.com/d0ugal/git-exporter/commit/6ad29e11c7c180091bd59d020eea3e7c4d8b5769))
+* update module github.com/go-git/go-billy/v5 to v5.8.0 ([f71c72a](https://github.com/d0ugal/git-exporter/commit/f71c72a4af3b748572be5ed1940633238267734d))
+* update module github.com/go-git/go-git/v5 to v5.16.5 ([05ca131](https://github.com/d0ugal/git-exporter/commit/05ca13190e6c1818756460d71aaa17f942e9fcc0))
+* update module github.com/go-git/go-git/v5 to v5.17.0 ([36d508d](https://github.com/d0ugal/git-exporter/commit/36d508dee2bae1cb8e29ac390083d3a72b1b3f22))
+* update module github.com/grpc-ecosystem/grpc-gateway/v2 to v2.27.8 ([3c2f192](https://github.com/d0ugal/git-exporter/commit/3c2f19250fe30934042fa1c6d804c934acd8b778))
+* update module github.com/grpc-ecosystem/grpc-gateway/v2 to v2.28.0 ([d664d86](https://github.com/d0ugal/git-exporter/commit/d664d86cad8e66fff53e594addf05339ddf791a4))
+* update module github.com/kevinburke/ssh_config to v1.5.0 ([acff98c](https://github.com/d0ugal/git-exporter/commit/acff98c3faa67898198a0e762053316d316ddc9b))
+* update module github.com/kevinburke/ssh_config to v1.6.0 ([a240034](https://github.com/d0ugal/git-exporter/commit/a240034f7f27077935c0b33738f6f23e72a80292))
+* update module github.com/klauspost/compress to v1.18.4 ([6168ca1](https://github.com/d0ugal/git-exporter/commit/6168ca1d6318934f0c79e20182cdb8ef2c1f6951))
+* update module github.com/prometheus/procfs to v0.20.0 ([3b177b5](https://github.com/d0ugal/git-exporter/commit/3b177b5ad7f2da70dfd5f38aa565ae09f0c9b3cb))
+* update module github.com/prometheus/procfs to v0.20.1 ([0e4b043](https://github.com/d0ugal/git-exporter/commit/0e4b0436f4200a136952f64bbe38cead1bbc6681))
+* update module github.com/ProtonMail/go-crypto to v1.4.0 ([09bbcb5](https://github.com/d0ugal/git-exporter/commit/09bbcb566ed10d8fcf545af27452d3526c776dbb))
+* update module golang.org/x/arch to v0.24.0 ([1ec287b](https://github.com/d0ugal/git-exporter/commit/1ec287b96d2b8db85105c0a47a603b82bad09dd7))
+* update module golang.org/x/crypto to v0.48.0 ([c4990da](https://github.com/d0ugal/git-exporter/commit/c4990da02b104fa1d1cef148530c74edc0078a7a))
+* update module golang.org/x/net to v0.50.0 ([c85cf8b](https://github.com/d0ugal/git-exporter/commit/c85cf8b0c78dc354a66d120a94e591ea703ff670))
+* update module golang.org/x/net to v0.51.0 ([fd7e2d8](https://github.com/d0ugal/git-exporter/commit/fd7e2d8a68ed2230178069b397e1ec3d5308455b))
+* update module golang.org/x/sys to v0.41.0 ([f58fe47](https://github.com/d0ugal/git-exporter/commit/f58fe4799155d9bad42ef8cf8e1c3bb95d44ce14))
+* update module golang.org/x/text to v0.34.0 ([d34adc9](https://github.com/d0ugal/git-exporter/commit/d34adc9942a3a58cc3fd3f761052bd21da16351c))
+* update module google.golang.org/grpc to v1.79.0 ([a5bbc6f](https://github.com/d0ugal/git-exporter/commit/a5bbc6f78d5fa6cbd7b15b7e6ce85a583b45fc9f))
+* update module google.golang.org/grpc to v1.79.1 ([c2350e8](https://github.com/d0ugal/git-exporter/commit/c2350e89f4bedcad19f55e4c7aae81045a5a2e4a))
+
 ## [0.2.38](https://github.com/d0ugal/git-exporter/compare/v0.2.37...v0.2.38) (2026-02-06)
 
 
