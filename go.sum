@@ -29,6 +29,7 @@ github.com/cyphar/filepath-securejoin v0.6.1 h1:5CeZ1jPXEiYt3+Z6zqprSAgSWiggmpVy
 github.com/cyphar/filepath-securejoin v0.6.1/go.mod h1:A8hd4EnAeyujCJRrICiOWqjS1AX0a9kM5XL+NwKoYSc=
 github.com/d0ugal/promexporter v1.14.26 h1:Fg8FLpgIGBZieJZp0+2xrymPmdjzKIipzENU4aOY2KE=
 github.com/d0ugal/promexporter v1.14.26/go.mod h1:z39r3+kIpuW3D2R/Z7OhlP1bM9AmnCtN4cErJAHEDgk=
+github.com/d0ugal/promexporter/v2 v2.0.2/go.mod h1:8cDyhAdgQN+taX5bIWgSKGcb32xtGD5fEbXhUyAkuis=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
