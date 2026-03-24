@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.40](https://github.com/d0ugal/git-exporter/compare/v0.2.39...v0.2.40) (2026-03-24)
+
+
+### Bug Fixes
+
+* update module github.com/pelletier/go-toml/v2 to v2.3.0 ([b9cfb63](https://github.com/d0ugal/git-exporter/commit/b9cfb6368ae808667678977fac4915c8cc74a08d))
+
 ## [0.2.39](https://github.com/d0ugal/git-exporter/compare/v0.2.38...v0.2.39) (2026-03-23)
 
 
