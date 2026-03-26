@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.42](https://github.com/d0ugal/git-exporter/compare/v0.2.41...v0.2.42) (2026-03-26)
+
+
+### Bug Fixes
+
+* update module github.com/grafana/pyroscope-go to v1.2.8 ([832c923](https://github.com/d0ugal/git-exporter/commit/832c923d30be7b4dfcca8241d1d33ff68ccb925e))
+
 ## [0.2.41](https://github.com/d0ugal/git-exporter/compare/v0.2.40...v0.2.41) (2026-03-25)
 
 
