@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.2.43](https://github.com/d0ugal/git-exporter/compare/v0.2.42...v0.2.43) (2026-03-29)
+
+
+### Bug Fixes
+
+* update module github.com/bytedance/sonic/loader to v0.5.1 ([8c8d3e9](https://github.com/d0ugal/git-exporter/commit/8c8d3e960df8f4bf17d1fc4e9476a6c51a21329b))
+* update module github.com/d0ugal/promexporter to v1.14.29 ([fa47268](https://github.com/d0ugal/git-exporter/commit/fa47268e15f3360717143ee3648c853594eb88a0))
+* update module github.com/gin-contrib/sse to v1.1.1 ([8601cf9](https://github.com/d0ugal/git-exporter/commit/8601cf94fdf5b08b225cba51cbe449adbad7a997))
+* update module github.com/go-git/go-git/v5 to v5.17.1 ([18fc0c0](https://github.com/d0ugal/git-exporter/commit/18fc0c0e0a5ae663b51554b2b2410f0e8c49e2cc))
+
 ## [0.2.42](https://github.com/d0ugal/git-exporter/compare/v0.2.41...v0.2.42) (2026-03-26)
 
 
