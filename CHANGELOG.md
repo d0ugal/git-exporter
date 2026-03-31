@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.46](https://github.com/d0ugal/git-exporter/compare/v0.2.45...v0.2.46) (2026-03-31)
+
+
+### Bug Fixes
+
+* update module github.com/go-git/go-git/v5 to v5.17.2 ([398d83c](https://github.com/d0ugal/git-exporter/commit/398d83cbe9ba375a47f61d92df60e0e583995c07))
+
 ## [0.2.45](https://github.com/d0ugal/git-exporter/compare/v0.2.44...v0.2.45) (2026-03-31)
 
 
