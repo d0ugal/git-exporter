@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.2.44](https://github.com/d0ugal/git-exporter/compare/v0.2.43...v0.2.44) (2026-03-31)
+
+
+### Bug Fixes
+
+* update google.golang.org/genproto/googleapis/api digest to d5a96ad ([59b9ddd](https://github.com/d0ugal/git-exporter/commit/59b9ddd3c0b22a7024e849f795cfeb271c5f2912))
+* update google.golang.org/genproto/googleapis/rpc digest to d5a96ad ([5148b16](https://github.com/d0ugal/git-exporter/commit/5148b160dae013c85d31171589f716aea25cbdea))
+* update module github.com/d0ugal/promexporter to v1.14.30 ([d7b065a](https://github.com/d0ugal/git-exporter/commit/d7b065a2c8afd991cf63e4159b83e806fdb04880))
+* update module github.com/go-playground/validator/v10 to v10.30.2 ([2034e55](https://github.com/d0ugal/git-exporter/commit/2034e555690ba7f8de24d3cf4f443433a7cef477))
+
 ## [0.2.43](https://github.com/d0ugal/git-exporter/compare/v0.2.42...v0.2.43) (2026-03-29)
 
 
