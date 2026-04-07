@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.52](https://github.com/d0ugal/git-exporter/compare/v0.2.51...v0.2.52) (2026-04-07)
+
+
+### Bug Fixes
+
+* update module github.com/d0ugal/promexporter to v1.14.34 ([35b4e52](https://github.com/d0ugal/git-exporter/commit/35b4e5220165630786f25142c60a864111c8496e))
+* update opentelemetry-go-contrib monorepo to v0.68.0 ([aa8f83e](https://github.com/d0ugal/git-exporter/commit/aa8f83e508349094d7745af4c4527bc66dd85926))
+
 ## [0.2.51](https://github.com/d0ugal/git-exporter/compare/v0.2.50...v0.2.51) (2026-04-07)
 
 
