@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.54](https://github.com/d0ugal/git-exporter/compare/v0.2.53...v0.2.54) (2026-04-08)
+
+
+### Bug Fixes
+
+* update dependency go to v1.26.2 ([067f05d](https://github.com/d0ugal/git-exporter/commit/067f05d25632b30b9e494e23a26146255cb541c4))
+
 ## [0.2.53](https://github.com/d0ugal/git-exporter/compare/v0.2.52...v0.2.53) (2026-04-07)
 
 
