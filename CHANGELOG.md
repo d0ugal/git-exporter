@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.57](https://github.com/d0ugal/git-exporter/compare/v0.2.56...v0.2.57) (2026-04-09)
+
+
+### Bug Fixes
+
+* update module golang.org/x/crypto to v0.50.0 ([6a956bb](https://github.com/d0ugal/git-exporter/commit/6a956bb36eeb6cd0606c8e327fb69d0b2e2f7382))
+
 ## [0.2.56](https://github.com/d0ugal/git-exporter/compare/v0.2.55...v0.2.56) (2026-04-09)
 
 
