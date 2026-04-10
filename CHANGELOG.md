@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.2](https://github.com/d0ugal/git-exporter/compare/v0.3.1...v0.3.2) (2026-04-10)
+
+
+### Bug Fixes
+
+* update module golang.org/x/arch to v0.26.0 ([9e46c1e](https://github.com/d0ugal/git-exporter/commit/9e46c1e68a2c8684f66eee61c96a0c49d24ae3c9))
+
 ## [0.3.1](https://github.com/d0ugal/git-exporter/compare/v0.3.0...v0.3.1) (2026-04-10)
 
 
