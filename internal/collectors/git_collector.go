@@ -5,7 +5,9 @@ import (
 	"fmt"
 	"log/slog"
 	"os"
+	"os/exec"
 	"path/filepath"
+	"strconv"
 	"strings"
 	"time"
 
@@ -19,19 +21,21 @@ import (
 )
 
 type GitCollector struct {
-	config      *config.Config
-	metrics     *metrics.GitRegistry
-	app         *app.App
-	done        chan struct{}
+	config       *config.Config
+	metrics      *metrics.GitRegistry
+	app          *app.App
+	done         chan struct{}
 	repositories []config.RepositoryConfig // Cached list of expanded repositories
+	lastBranch   map[string]string          // Last known branch per repository name
 }
 
 func NewGitCollector(cfg *config.Config, metricsRegistry *metrics.GitRegistry, app *app.App) *GitCollector {
 	return &GitCollector{
-		config:  cfg,
-		metrics: metricsRegistry,
-		app:     app,
-		done:    make(chan struct{}),
+		config:     cfg,
+		metrics:    metricsRegistry,
+		app:        app,
+		done:       make(chan struct{}),
+		lastBranch: make(map[string]string),
 	}
 }
 
@@ -176,17 +180,34 @@ func (gc *GitCollector) collectRepositoryMetrics(ctx context.Context, repo confi
 			span.RecordError(err, attribute.String("operation", "get_current_branch"))
 		}
 	} else {
-		// Reset all branch metrics for this repository
+		// Delete previous branch metric if branch has changed
 		gc.resetBranchMetrics(repo.Name)
 		// Set current branch metric
 		gc.metrics.GitCurrentBranch.With(prometheus.Labels{
 			"repository": repo.Name,
 			"branch":     branch,
 		}).Set(1)
+		gc.lastBranch[repo.Name] = branch
 		if span != nil {
 			span.SetAttributes(attribute.String("repository.branch", branch))
 		}
 	}
+
+	// Get ahead/behind counts relative to upstream
+	ahead, behind, err := gc.getAheadBehind(repo.Path)
+	if err != nil {
+		slog.Debug("Failed to get ahead/behind counts (no upstream?)",
+			"repository", repo.Name,
+			"error", err,
+		)
+		ahead, behind = 0, 0
+	}
+	gc.metrics.GitAheadCount.With(prometheus.Labels{
+		"repository": repo.Name,
+	}).Set(float64(ahead))
+	gc.metrics.GitBehindCount.With(prometheus.Labels{
+		"repository": repo.Name,
+	}).Set(float64(behind))
 
 	// Check if repository is dirty
 	isDirty, err := gc.isDirty(r)
@@ -344,15 +365,42 @@ func (gc *GitCollector) isCherryPickInProgress(repoPath string) bool {
 	return false
 }
 
-// resetBranchMetrics resets all branch metrics for a repository
-// This ensures only the current branch has a value of 1
+// resetBranchMetrics deletes the previous branch metric for a repository
+// so that when the branch changes, stale label combinations don't persist.
 func (gc *GitCollector) resetBranchMetrics(repoName string) {
-	// We need to get all existing metrics and reset them
-	// Since Prometheus doesn't provide a direct way to list all label combinations,
-	// we'll use a different approach: we'll just set the current branch to 1
-	// and rely on the fact that old metrics will be stale if the branch changes.
-	// For a more complete solution, we could maintain a list of known branches.
-	// For now, this simpler approach should work for most use cases.
+	if prev, ok := gc.lastBranch[repoName]; ok {
+		gc.metrics.GitCurrentBranch.Delete(prometheus.Labels{
+			"repository": repoName,
+			"branch":     prev,
+		})
+	}
+}
+
+// getAheadBehind returns how many commits the current branch is ahead and behind its upstream.
+// Returns (0, 0, nil) when no upstream is configured.
+func (gc *GitCollector) getAheadBehind(repoPath string) (int, int, error) {
+	cmd := exec.Command("git", "-C", repoPath, "rev-list", "--left-right", "--count", "HEAD...@{u}") //#nosec G204
+	out, err := cmd.Output()
+	if err != nil {
+		return 0, 0, fmt.Errorf("git rev-list: %w", err)
+	}
+
+	parts := strings.Fields(strings.TrimSpace(string(out)))
+	if len(parts) != 2 { //nolint:mnd
+		return 0, 0, fmt.Errorf("unexpected rev-list output: %q", string(out))
+	}
+
+	ahead, err := strconv.Atoi(parts[0])
+	if err != nil {
+		return 0, 0, fmt.Errorf("parse ahead count: %w", err)
+	}
+
+	behind, err := strconv.Atoi(parts[1])
+	if err != nil {
+		return 0, 0, fmt.Errorf("parse behind count: %w", err)
+	}
+
+	return ahead, behind, nil
 }
 
 func (gc *GitCollector) Stop() {

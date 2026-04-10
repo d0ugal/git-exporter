@@ -11,12 +11,14 @@ type GitRegistry struct {
 	*promexporter_metrics.Registry
 
 	// Git repository metrics
-	GitLastCommitTimestamp *prometheus.GaugeVec
-	GitCurrentBranch       *prometheus.GaugeVec
-	GitIsDirty             *prometheus.GaugeVec
-	GitRebaseInProgress    *prometheus.GaugeVec
-	GitMergeInProgress     *prometheus.GaugeVec
+	GitLastCommitTimestamp  *prometheus.GaugeVec
+	GitCurrentBranch        *prometheus.GaugeVec
+	GitIsDirty              *prometheus.GaugeVec
+	GitRebaseInProgress     *prometheus.GaugeVec
+	GitMergeInProgress      *prometheus.GaugeVec
 	GitCherryPickInProgress *prometheus.GaugeVec
+	GitAheadCount           *prometheus.GaugeVec
+	GitBehindCount          *prometheus.GaugeVec
 }
 
 // NewGitRegistry creates a new Git metrics registry
@@ -94,6 +96,28 @@ func NewGitRegistry(baseRegistry *promexporter_metrics.Registry) *GitRegistry {
 	)
 
 	baseRegistry.AddMetricInfo("git_cherry_pick_in_progress", "Whether a cherry-pick operation is in progress (1 = in progress, 0 = not in progress)", []string{"repository"})
+
+	// Git ahead count (commits ahead of upstream)
+	git.GitAheadCount = factory.NewGaugeVec(
+		prometheus.GaugeOpts{
+			Name: "git_ahead_count",
+			Help: "Number of commits ahead of upstream (0 if no upstream configured)",
+		},
+		[]string{"repository"},
+	)
+
+	baseRegistry.AddMetricInfo("git_ahead_count", "Number of commits ahead of upstream (0 if no upstream configured)", []string{"repository"})
+
+	// Git behind count (commits behind upstream)
+	git.GitBehindCount = factory.NewGaugeVec(
+		prometheus.GaugeOpts{
+			Name: "git_behind_count",
+			Help: "Number of commits behind upstream (0 if no upstream configured)",
+		},
+		[]string{"repository"},
+	)
+
+	baseRegistry.AddMetricInfo("git_behind_count", "Number of commits behind upstream (0 if no upstream configured)", []string{"repository"})
 
 	return git
 }
