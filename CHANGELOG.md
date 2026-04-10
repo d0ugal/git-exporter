@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.3.0](https://github.com/d0ugal/git-exporter/compare/v0.2.57...v0.3.0) (2026-04-10)
+
+
+### Features
+
+* add ahead/behind metrics and fix stale branch metric on branch change ([9292679](https://github.com/d0ugal/git-exporter/commit/9292679fed08c461300da873911885bc40a32455))
+
+
+### Bug Fixes
+
+* update module github.com/d0ugal/promexporter to v1.14.38 ([4121662](https://github.com/d0ugal/git-exporter/commit/41216625f39d6d387b5e57dd3c102d73c144bf6d))
+* update module golang.org/x/net to v0.53.0 ([3bf961f](https://github.com/d0ugal/git-exporter/commit/3bf961ffdbca4304342deeafdda4d430932b096e))
+
 ## [0.2.57](https://github.com/d0ugal/git-exporter/compare/v0.2.56...v0.2.57) (2026-04-09)
 
 
