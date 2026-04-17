@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.5](https://github.com/d0ugal/git-exporter/compare/v0.3.4...v0.3.5) (2026-04-17)
+
+
+### Bug Fixes
+
+* update module github.com/d0ugal/promexporter to v1.14.41 ([dff8163](https://github.com/d0ugal/git-exporter/commit/dff8163dd823b0ddb1bf5977bd6968adfa825baa))
+* update module github.com/go-git/go-git/v5 to v5.18.0 ([4ae408e](https://github.com/d0ugal/git-exporter/commit/4ae408e31d5b79557698d8fb74bada2386df2863))
+
 ## [0.3.4](https://github.com/d0ugal/git-exporter/compare/v0.3.3...v0.3.4) (2026-04-16)
 
 
