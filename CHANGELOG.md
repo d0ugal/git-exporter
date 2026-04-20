@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.7](https://github.com/d0ugal/git-exporter/compare/v0.3.6...v0.3.7) (2026-04-20)
+
+
+### Bug Fixes
+
+* update google.golang.org/genproto/googleapis/api digest to e10c466 ([067bf1a](https://github.com/d0ugal/git-exporter/commit/067bf1a46254c1b439b81507165cc9f096a620da))
+
 ## [0.3.6](https://github.com/d0ugal/git-exporter/compare/v0.3.5...v0.3.6) (2026-04-20)
 
 
