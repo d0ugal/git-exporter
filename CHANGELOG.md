@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.9](https://github.com/d0ugal/git-exporter/compare/v0.3.8...v0.3.9) (2026-04-21)
+
+
+### Bug Fixes
+
+* remove trailing blank line in commits.yml ([bab43b1](https://github.com/d0ugal/git-exporter/commit/bab43b1521b18dc21850440d8dca07a5cb551d8e))
+* update module github.com/d0ugal/promexporter to v1.14.43 ([7fca510](https://github.com/d0ugal/git-exporter/commit/7fca510adbc082100d917689bbbbb3554e41139b))
+
 ## [0.3.8](https://github.com/d0ugal/git-exporter/compare/v0.3.7...v0.3.8) (2026-04-21)
 
 
