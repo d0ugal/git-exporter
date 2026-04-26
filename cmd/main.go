@@ -27,7 +27,7 @@ func main() {
 	)
 
 	flag.StringVar(&configPath, "config", "config.yaml", "Path to configuration file")
-	flag.BoolVar(&configFromEnv, "config-from-env", false, "Load configuration from environment variables only")
+	flag.BoolVar(&configFromEnv, "config-from-env", false, "Deprecated: env vars are always applied; this flag is a no-op")
 	flag.Parse()
 
 	// Show version if requested
@@ -38,15 +38,17 @@ func main() {
 		os.Exit(0)
 	}
 
-	// Use environment variable if config flag is not provided
-	if configPath == "config.yaml" && !configFromEnv {
+	if configPath == "config.yaml" {
 		if envConfig := os.Getenv("CONFIG_PATH"); envConfig != "" {
 			configPath = envConfig
 		}
 	}
 
-	// Load configuration
-	cfg, err := config.LoadConfig(configPath, configFromEnv)
+	if configFromEnv {
+		fmt.Fprintln(os.Stderr, "Warning: --config-from-env is deprecated and has no effect. Env vars are always applied on top of yaml config.")
+	}
+
+	cfg, err := config.LoadConfig(configPath)
 	if err != nil {
 		slog.Error("Failed to load configuration", "error", err)
 		os.Exit(1)
