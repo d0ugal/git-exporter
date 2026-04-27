@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.3.10](https://github.com/d0ugal/git-exporter/compare/v0.3.9...v0.3.10) (2026-04-27)
+
+
+### Bug Fixes
+
+* make yaml optional and always overlay env vars on config ([e1d8524](https://github.com/d0ugal/git-exporter/commit/e1d8524bdd42ad07335208479f4299f946dc5801))
+* update module github.com/mattn/go-isatty to v0.0.22 ([f6c0f9f](https://github.com/d0ugal/git-exporter/commit/f6c0f9fd82089e7aa2d87c386741a521cbd18c82))
+* use RELEASE_TOKEN in auto-format workflow to trigger CI ([797ee89](https://github.com/d0ugal/git-exporter/commit/797ee89e00b2efa0fa1454ce79335df77d90cddf))
+
 ## [0.3.9](https://github.com/d0ugal/git-exporter/compare/v0.3.8...v0.3.9) (2026-04-21)
 
 
