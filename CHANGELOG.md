@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.3.11](https://github.com/d0ugal/git-exporter/compare/v0.3.10...v0.3.11) (2026-04-27)
+
+
+### Bug Fixes
+
+* update google.golang.org/genproto/googleapis/api digest to 7cedc36 ([7821548](https://github.com/d0ugal/git-exporter/commit/7821548a4777bfe39695cec193f034be80b72f34))
+* update google.golang.org/genproto/googleapis/rpc digest to 7cedc36 ([2ee342f](https://github.com/d0ugal/git-exporter/commit/2ee342f7b5151b851661338c9bf6f0cb73da1e6e))
+* update module github.com/bytedance/sonic to v1.15.1 ([40fb3b1](https://github.com/d0ugal/git-exporter/commit/40fb3b10dbbfb7c9281b9d5eb88946d859ec1620))
+* update module github.com/d0ugal/promexporter to v1.14.45 ([2e423c3](https://github.com/d0ugal/git-exporter/commit/2e423c3b5516e3538f74fd38dabc60cf1d6887c0))
+
 ## [0.3.10](https://github.com/d0ugal/git-exporter/compare/v0.3.9...v0.3.10) (2026-04-27)
 
 
