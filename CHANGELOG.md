@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.3.13](https://github.com/d0ugal/git-exporter/compare/v0.3.12...v0.3.13) (2026-04-30)
+
+
+### Bug Fixes
+
+* update module github.com/cloudwego/base64x to v0.1.7 ([54351df](https://github.com/d0ugal/git-exporter/commit/54351df9258c8c87158b10074357dfc035f93f4d))
+* update module github.com/d0ugal/promexporter to v1.14.46 ([0fbd5b4](https://github.com/d0ugal/git-exporter/commit/0fbd5b424d62311f66e61867f310a4cd04625bc9))
+* update module github.com/klauspost/compress to v1.18.6 ([d2b1d60](https://github.com/d0ugal/git-exporter/commit/d2b1d605821c580bb1f51db84c6f6ab1ea868865))
+
 ## [0.3.12](https://github.com/d0ugal/git-exporter/compare/v0.3.11...v0.3.12) (2026-04-28)
 
 
