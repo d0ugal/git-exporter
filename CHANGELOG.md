@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.14](https://github.com/d0ugal/git-exporter/compare/v0.3.13...v0.3.14) (2026-05-01)
+
+
+### Bug Fixes
+
+* update module github.com/d0ugal/promexporter to v1.14.47 ([f982b76](https://github.com/d0ugal/git-exporter/commit/f982b767772689104e11c680d66d3a96c0900d69))
+* update module github.com/pjbgf/sha1cd to v0.6.0 ([c1e9c34](https://github.com/d0ugal/git-exporter/commit/c1e9c344e2a6f897bccc3b971d90d1a237a6c174))
+
 ## [0.3.13](https://github.com/d0ugal/git-exporter/compare/v0.3.12...v0.3.13) (2026-04-30)
 
 
