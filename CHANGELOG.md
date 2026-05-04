@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.3.16](https://github.com/d0ugal/git-exporter/compare/v0.3.15...v0.3.16) (2026-05-04)
+
+
+### Bug Fixes
+
+* update google.golang.org/genproto/googleapis/api digest to 60b97b3 ([2864535](https://github.com/d0ugal/git-exporter/commit/2864535166e93e52024b0a7112591687927cfe8c))
+* update module github.com/d0ugal/promexporter to v1.14.48 ([1fb94de](https://github.com/d0ugal/git-exporter/commit/1fb94de7b49bc7e8b33a41898aed265bc0aaa8db))
+* update module github.com/d0ugal/promexporter to v1.14.49 ([2a27667](https://github.com/d0ugal/git-exporter/commit/2a27667dbd5aa919eff4dcaa35e590264e8a2520))
+* update module google.golang.org/grpc to v1.81.0 ([972ba0b](https://github.com/d0ugal/git-exporter/commit/972ba0bc5b1789416daf52d1639743c7192a54b2))
+
 ## [0.3.15](https://github.com/d0ugal/git-exporter/compare/v0.3.14...v0.3.15) (2026-05-02)
 
 
