@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.17](https://github.com/d0ugal/git-exporter/compare/v0.3.16...v0.3.17) (2026-05-04)
+
+
+### Bug Fixes
+
+* update google.golang.org/genproto/googleapis/rpc digest to 60b97b3 ([9086a62](https://github.com/d0ugal/git-exporter/commit/9086a62185e5261cf4799fd6df90825ca8fdc2c0))
+
 ## [0.3.16](https://github.com/d0ugal/git-exporter/compare/v0.3.15...v0.3.16) (2026-05-04)
 
 
