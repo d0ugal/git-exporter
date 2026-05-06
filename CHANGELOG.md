@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.3.18](https://github.com/d0ugal/git-exporter/compare/v0.3.17...v0.3.18) (2026-05-06)
+
+
+### Bug Fixes
+
+* update module github.com/d0ugal/promexporter to v1.14.50 ([a8ee614](https://github.com/d0ugal/git-exporter/commit/a8ee614989f2fe13a2602ec719539ce0a11f94fb))
+* update module github.com/go-git/go-billy/v5 to v5.9.0 ([a938c17](https://github.com/d0ugal/git-exporter/commit/a938c17fcd5110345d35be3c921d56fb8f6f94f2))
+* update module github.com/go-git/go-git/v5 to v5.19.0 ([254087a](https://github.com/d0ugal/git-exporter/commit/254087a149e4e09a5fc74ab4538b491e8d555e4b))
+* update module github.com/grafana/pyroscope-go to v1.3.0 ([6eabcb5](https://github.com/d0ugal/git-exporter/commit/6eabcb54469af482d32764543a610981307ecacd))
+* update module github.com/grafana/pyroscope-go/godeltaprof to v0.1.10 ([faaa73d](https://github.com/d0ugal/git-exporter/commit/faaa73d0df5a27372d683deee85d198faf63c39b))
+
 ## [0.3.17](https://github.com/d0ugal/git-exporter/compare/v0.3.16...v0.3.17) (2026-05-04)
 
 
