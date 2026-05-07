@@ -27,8 +27,8 @@ github.com/cloudwego/base64x v0.1.7 h1:NppS+Fgzg5ovhn4NkUXaDT3x9jldgH5ToMCqzBSi2
 github.com/cloudwego/base64x v0.1.7/go.mod h1:Cu1PV9zfrSf7ET2tIbWbbEy7jO7HHJ13q4X2SQ8aWYg=
 github.com/cyphar/filepath-securejoin v0.6.1 h1:5CeZ1jPXEiYt3+Z6zqprSAgSWiggmpVyciv8syjIpVE=
 github.com/cyphar/filepath-securejoin v0.6.1/go.mod h1:A8hd4EnAeyujCJRrICiOWqjS1AX0a9kM5XL+NwKoYSc=
-github.com/d0ugal/promexporter v1.14.50 h1:pjjxq+HJ1t/jHpZZPtyzn0b1YDX15IqpFpQuOlHDjrw=
-github.com/d0ugal/promexporter v1.14.50/go.mod h1:/2Xwb47O2kVBBigxcGD763ZLqPswAmVszUM0/cn7ftA=
+github.com/d0ugal/promexporter v1.14.51 h1:cS87uA77/UsCFL5FSKrKM4WlWKFRJP3tFV3BL5qc0qs=
+github.com/d0ugal/promexporter v1.14.51/go.mod h1:bXULylGcU3Aj3gpN0NFUIEpLK/qyfK4RFxp8KFHZUFY=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
