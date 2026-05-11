@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.3.20](https://github.com/d0ugal/git-exporter/compare/v0.3.19...v0.3.20) (2026-05-11)
+
+
+### Bug Fixes
+
+* update go toolchain directive to v1.26.3 ([dbc69c4](https://github.com/d0ugal/git-exporter/commit/dbc69c471abf2cf0581ad67040408ea468f8990c))
+* update module github.com/d0ugal/promexporter to v1.14.52 ([c7dacb1](https://github.com/d0ugal/git-exporter/commit/c7dacb15a293b536c7d5ebc5b78d909fc9082585))
+* update module github.com/d0ugal/promexporter to v1.14.53 ([79fe57f](https://github.com/d0ugal/git-exporter/commit/79fe57f4550f46feee98ce23233d96449df45120))
+* update module github.com/quic-go/quic-go to v0.59.1 ([3be292e](https://github.com/d0ugal/git-exporter/commit/3be292efe237d1455600ffff761f7983de58be39))
+* update module golang.org/x/arch to v0.27.0 ([92e1041](https://github.com/d0ugal/git-exporter/commit/92e10413edafe12245def93bfa0d52595d74d1a3))
+* update module golang.org/x/crypto to v0.51.0 ([d6bf515](https://github.com/d0ugal/git-exporter/commit/d6bf5151202ee5fdf454c3078feaa98d27fdbb8b))
+* update module golang.org/x/net to v0.54.0 ([f407ead](https://github.com/d0ugal/git-exporter/commit/f407eade0def61bffba8c157f97cb5ac25dc35c1))
+* update module golang.org/x/sys to v0.44.0 ([00d099e](https://github.com/d0ugal/git-exporter/commit/00d099eb174b16149fb1d9ecc81552d0dc9cd9bd))
+* update module golang.org/x/text to v0.37.0 ([563832f](https://github.com/d0ugal/git-exporter/commit/563832feb167cd516bb9c9d269f471ac20203dd7))
+
 ## [0.3.19](https://github.com/d0ugal/git-exporter/compare/v0.3.18...v0.3.19) (2026-05-07)
 
 
