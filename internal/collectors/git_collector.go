@@ -26,7 +26,7 @@ type GitCollector struct {
 	app          *app.App
 	done         chan struct{}
 	repositories []config.RepositoryConfig // Cached list of expanded repositories
-	lastBranch   map[string]string          // Last known branch per repository name
+	lastBranch   map[string]string         // Last known branch per repository name
 }
 
 func NewGitCollector(cfg *config.Config, metricsRegistry *metrics.GitRegistry, app *app.App) *GitCollector {
@@ -42,6 +42,7 @@ func NewGitCollector(cfg *config.Config, metricsRegistry *metrics.GitRegistry, a
 func (gc *GitCollector) Start(ctx context.Context) {
 	// Expand repositories once at startup and cache them
 	var err error
+
 	gc.repositories, err = gc.config.ExpandRepositories()
 	if err != nil {
 		slog.Error("Failed to expand repositories at startup", "error", err)
@@ -50,11 +51,13 @@ func (gc *GitCollector) Start(ctx context.Context) {
 	} else {
 		slog.Info("Discovered repositories", "count", len(gc.repositories))
 	}
+
 	go gc.run(ctx)
 }
 
 func (gc *GitCollector) run(ctx context.Context) {
 	interval := time.Duration(gc.config.GetDefaultInterval()) * time.Second
+
 	ticker := time.NewTicker(interval)
 	defer ticker.Stop()
 
@@ -79,10 +82,12 @@ func (gc *GitCollector) collectMetrics(ctx context.Context) {
 	tracer := gc.app.GetTracer()
 
 	var span *tracing.CollectorSpan
+
 	spanCtx := ctx
 
 	if tracer != nil && tracer.IsEnabled() {
 		span = tracer.NewCollectorSpan(ctx, "git-collector", "collect-metrics")
+
 		spanCtx = span.Context()
 		defer span.End()
 	}
@@ -91,12 +96,15 @@ func (gc *GitCollector) collectMetrics(ctx context.Context) {
 	// If expansion failed at startup, try again
 	if len(gc.repositories) == 0 {
 		var err error
+
 		gc.repositories, err = gc.config.ExpandRepositories()
 		if err != nil {
 			slog.Error("Failed to expand repositories", "error", err)
+
 			if span != nil {
 				span.RecordError(err, attribute.String("operation", "expand_repositories"))
 			}
+
 			return
 		}
 	}
@@ -119,6 +127,7 @@ func (gc *GitCollector) collectRepositoryMetrics(ctx context.Context, repo confi
 
 	if tracer != nil && tracer.IsEnabled() {
 		span = tracer.NewCollectorSpan(ctx, "git-collector", "collect-repository")
+
 		span.SetAttributes(
 			attribute.String("repository.name", repo.Name),
 			attribute.String("repository.path", repo.Path),
@@ -133,9 +142,11 @@ func (gc *GitCollector) collectRepositoryMetrics(ctx context.Context, repo confi
 			"path", repo.Path,
 			"error", err,
 		)
+
 		if span != nil {
 			span.RecordError(err, attribute.String("operation", "stat_path"))
 		}
+
 		return
 	}
 
@@ -147,9 +158,11 @@ func (gc *GitCollector) collectRepositoryMetrics(ctx context.Context, repo confi
 			"path", repo.Path,
 			"error", err,
 		)
+
 		if span != nil {
 			span.RecordError(err, attribute.String("operation", "open_repository"))
 		}
+
 		return
 	}
 
@@ -160,6 +173,7 @@ func (gc *GitCollector) collectRepositoryMetrics(ctx context.Context, repo confi
 			"repository", repo.Name,
 			"error", err,
 		)
+
 		if span != nil {
 			span.RecordError(err, attribute.String("operation", "get_last_commit"))
 		}
@@ -176,6 +190,7 @@ func (gc *GitCollector) collectRepositoryMetrics(ctx context.Context, repo confi
 			"repository", repo.Name,
 			"error", err,
 		)
+
 		if span != nil {
 			span.RecordError(err, attribute.String("operation", "get_current_branch"))
 		}
@@ -187,6 +202,7 @@ func (gc *GitCollector) collectRepositoryMetrics(ctx context.Context, repo confi
 			"repository": repo.Name,
 			"branch":     branch,
 		}).Set(1)
+
 		gc.lastBranch[repo.Name] = branch
 		if span != nil {
 			span.SetAttributes(attribute.String("repository.branch", branch))
@@ -200,8 +216,10 @@ func (gc *GitCollector) collectRepositoryMetrics(ctx context.Context, repo confi
 			"repository", repo.Name,
 			"error", err,
 		)
+
 		ahead, behind = 0, 0
 	}
+
 	gc.metrics.GitAheadCount.With(prometheus.Labels{
 		"repository": repo.Name,
 	}).Set(float64(ahead))
@@ -216,6 +234,7 @@ func (gc *GitCollector) collectRepositoryMetrics(ctx context.Context, repo confi
 			"repository", repo.Name,
 			"error", err,
 		)
+
 		if span != nil {
 			span.RecordError(err, attribute.String("operation", "check_dirty"))
 		}
@@ -224,9 +243,11 @@ func (gc *GitCollector) collectRepositoryMetrics(ctx context.Context, repo confi
 		if isDirty {
 			dirtyValue = 1
 		}
+
 		gc.metrics.GitIsDirty.With(prometheus.Labels{
 			"repository": repo.Name,
 		}).Set(dirtyValue)
+
 		if span != nil {
 			span.SetAttributes(attribute.Bool("repository.dirty", isDirty))
 		}
@@ -234,30 +255,36 @@ func (gc *GitCollector) collectRepositoryMetrics(ctx context.Context, repo confi
 
 	// Check for rebase in progress
 	rebaseInProgress := gc.isRebaseInProgress(repo.Path)
+
 	var rebaseValue float64
 	if rebaseInProgress {
 		rebaseValue = 1
 	}
+
 	gc.metrics.GitRebaseInProgress.With(prometheus.Labels{
 		"repository": repo.Name,
 	}).Set(rebaseValue)
 
 	// Check for merge in progress
 	mergeInProgress := gc.isMergeInProgress(repo.Path)
+
 	var mergeValue float64
 	if mergeInProgress {
 		mergeValue = 1
 	}
+
 	gc.metrics.GitMergeInProgress.With(prometheus.Labels{
 		"repository": repo.Name,
 	}).Set(mergeValue)
 
 	// Check for cherry-pick in progress
 	cherryPickInProgress := gc.isCherryPickInProgress(repo.Path)
+
 	var cherryPickValue float64
 	if cherryPickInProgress {
 		cherryPickValue = 1
 	}
+
 	gc.metrics.GitCherryPickInProgress.With(prometheus.Labels{
 		"repository": repo.Name,
 	}).Set(cherryPickValue)
@@ -334,6 +361,7 @@ func (gc *GitCollector) isRebaseInProgress(repoPath string) bool {
 	if _, err := os.Stat(rebaseDir); err == nil {
 		return true
 	}
+
 	if _, err := os.Stat(rebaseMergeDir); err == nil {
 		return true
 	}
@@ -380,6 +408,7 @@ func (gc *GitCollector) resetBranchMetrics(repoName string) {
 // Returns (0, 0, nil) when no upstream is configured.
 func (gc *GitCollector) getAheadBehind(repoPath string) (int, int, error) {
 	cmd := exec.Command("git", "-C", repoPath, "rev-list", "--left-right", "--count", "HEAD...@{u}") //#nosec G204
+
 	out, err := cmd.Output()
 	if err != nil {
 		return 0, 0, fmt.Errorf("git rev-list: %w", err)
@@ -406,4 +435,3 @@ func (gc *GitCollector) getAheadBehind(repoPath string) (int, int, error) {
 func (gc *GitCollector) Stop() {
 	close(gc.done)
 }
-

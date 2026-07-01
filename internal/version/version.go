@@ -6,4 +6,3 @@ var (
 	Commit    = "unknown"
 	BuildDate = "unknown"
 )
-
