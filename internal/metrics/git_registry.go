@@ -121,4 +121,3 @@ func NewGitRegistry(baseRegistry *promexporter_metrics.Registry) *GitRegistry {
 
 	return git
 }
-

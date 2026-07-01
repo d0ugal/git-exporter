@@ -70,17 +70,21 @@ func applyEnvVars(cfg *Config) {
 	if host := os.Getenv("GIT_EXPORTER_SERVER_HOST"); host != "" {
 		cfg.Server.Host = host
 	}
+
 	if portStr := os.Getenv("GIT_EXPORTER_SERVER_PORT"); portStr != "" {
 		if port, err := strconv.Atoi(portStr); err == nil {
 			cfg.Server.Port = port
 		}
 	}
+
 	if level := os.Getenv("GIT_EXPORTER_LOG_LEVEL"); level != "" {
 		cfg.Logging.Level = level
 	}
+
 	if format := os.Getenv("GIT_EXPORTER_LOG_FORMAT"); format != "" {
 		cfg.Logging.Format = format
 	}
+
 	if intervalStr := os.Getenv("GIT_EXPORTER_METRICS_DEFAULT_INTERVAL"); intervalStr != "" {
 		if interval, err := time.ParseDuration(intervalStr); err == nil {
 			cfg.Metrics.Collection.DefaultInterval = promexporter_config.Duration{Duration: interval}
@@ -190,6 +194,7 @@ func (c *Config) validateGitConfig() error {
 		if repo.Name == "" {
 			return fmt.Errorf("repository[%d]: name is required", i)
 		}
+
 		if repo.Path == "" {
 			return fmt.Errorf("repository[%d]: path is required", i)
 		}
@@ -224,6 +229,7 @@ func (c *Config) ExpandRepositories() ([]RepositoryConfig, error) {
 		if err != nil {
 			return nil, fmt.Errorf("failed to discover repositories in %s: %w", discoverPath, err)
 		}
+
 		allRepos = append(allRepos, repos...)
 	}
 
@@ -297,6 +303,7 @@ func discoverRepositories(rootPath string) ([]RepositoryConfig, error) {
 // It checks for both regular repositories (.git directory) and bare repositories (.git file or bare repo structure)
 func isGitRepository(path string) bool {
 	gitDir := filepath.Join(path, ".git")
+
 	gitDirInfo, err := os.Stat(gitDir)
 	if err != nil {
 		return false
@@ -306,6 +313,7 @@ func isGitRepository(path string) bool {
 	if gitDirInfo.IsDir() {
 		// Check for bare repository indicators
 		headFile := filepath.Join(gitDir, "HEAD")
+
 		configFile := filepath.Join(gitDir, "config")
 		if _, err := os.Stat(headFile); err == nil {
 			if _, err := os.Stat(configFile); err == nil {
@@ -324,4 +332,3 @@ func isGitRepository(path string) bool {
 
 	return false
 }
-
