@@ -83,7 +83,7 @@ func (gc *GitCollector) collectMetrics(ctx context.Context) {
 
 	var span *tracing.CollectorSpan
 
-	spanCtx := ctx
+	spanCtx := ctx //nolint:contextcheck // spanCtx is reassigned to span.Context() below, which derives from the parent ctx
 
 	if tracer != nil && tracer.IsEnabled() {
 		span = tracer.NewCollectorSpan(ctx, "git-collector", "collect-metrics")

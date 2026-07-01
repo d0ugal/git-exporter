@@ -45,6 +45,7 @@ linters:
     - wsl  # Use wsl_v5 instead
     - gocyclo  # Allow complex functions for SNMP data processing
     - maintidx  # Allow complex registry functions
+    - promlinter  # git_ahead_count/git_behind_count are intentional, stable gauge names; renaming would break dashboards
 
   settings:
     gosec:
