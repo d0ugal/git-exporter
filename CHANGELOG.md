@@ -1,5 +1,23 @@
 # Changelog
 
+## [0.3.22](https://github.com/d0ugal/git-exporter/compare/v0.3.21...v0.3.22) (2026-08-08)
+
+
+### Bug Fixes
+
+* update google.golang.org/genproto/googleapis/api digest to 6ac0973 ([#469](https://github.com/d0ugal/git-exporter/issues/469)) ([51a422b](https://github.com/d0ugal/git-exporter/commit/51a422b396ef7dd0c12518f47c67824c06f777a3))
+* update google.golang.org/genproto/googleapis/api digest to c8921c7 ([#477](https://github.com/d0ugal/git-exporter/issues/477)) ([b06e52d](https://github.com/d0ugal/git-exporter/commit/b06e52d3e51ba51ebc6e5fc8086141d2787368ba))
+* update google.golang.org/genproto/googleapis/rpc digest to 6ac0973 ([#470](https://github.com/d0ugal/git-exporter/issues/470)) ([b18b5cc](https://github.com/d0ugal/git-exporter/commit/b18b5cc3ac6bf8f361cab91346919ff576dbedac))
+* update google.golang.org/genproto/googleapis/rpc digest to c8921c7 ([#478](https://github.com/d0ugal/git-exporter/issues/478)) ([148da7a](https://github.com/d0ugal/git-exporter/commit/148da7a135dd9e0e3d5c2df6725057ae247546ac))
+* update module github.com/cloudflare/circl to v1.6.5 ([#475](https://github.com/d0ugal/git-exporter/issues/475)) ([c8cb91a](https://github.com/d0ugal/git-exporter/commit/c8cb91ac19595298f6eb66894ad519f5021a1336))
+* update module github.com/d0ugal/promexporter to v1.14.68 ([#467](https://github.com/d0ugal/git-exporter/issues/467)) ([79b7202](https://github.com/d0ugal/git-exporter/commit/79b7202696fa8d87d8440522a10eb6471f9f1bb9))
+* update module github.com/grpc-ecosystem/grpc-gateway/v2 to v2.30.0 ([#474](https://github.com/d0ugal/git-exporter/issues/474)) ([4f90dcc](https://github.com/d0ugal/git-exporter/commit/4f90dccdaf72d55e41daf2fdfe9c9bf98b16473e))
+* update module github.com/klauspost/compress to v1.19.2 ([#476](https://github.com/d0ugal/git-exporter/issues/476)) ([d072531](https://github.com/d0ugal/git-exporter/commit/d072531af331293cbec62608b34cb0c0b6b4482a))
+* update module github.com/ugorji/go/codec to v1.3.2 ([#472](https://github.com/d0ugal/git-exporter/issues/472)) ([c23facf](https://github.com/d0ugal/git-exporter/commit/c23facfa4cd9aa8a131008e1eb4740e67a9c1d95))
+* update module golang.org/x/arch to v0.30.0 ([#479](https://github.com/d0ugal/git-exporter/issues/479)) ([e0cb328](https://github.com/d0ugal/git-exporter/commit/e0cb32894b00e88a7b58096ee766347a99e5d4df))
+* update opentelemetry-go monorepo to v1.45.0 ([#471](https://github.com/d0ugal/git-exporter/issues/471)) ([78ba94d](https://github.com/d0ugal/git-exporter/commit/78ba94debbd87c2a1df570d5b8a73db0f91233f5))
+* update opentelemetry-go-contrib monorepo to v0.70.0 ([#473](https://github.com/d0ugal/git-exporter/issues/473)) ([cc511fa](https://github.com/d0ugal/git-exporter/commit/cc511fa59f81bcd0ae33aae8ee152e216a412757))
+
 ## [0.3.21](https://github.com/d0ugal/git-exporter/compare/v0.3.20...v0.3.21) (2026-07-30)
 
 
