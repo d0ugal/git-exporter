@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.3.23](https://github.com/d0ugal/git-exporter/compare/v0.3.22...v0.3.23) (2026-08-20)
+
+
+### Bug Fixes
+
+* update go toolchain directive to v1.27.0 ([#503](https://github.com/d0ugal/git-exporter/issues/503)) ([531118f](https://github.com/d0ugal/git-exporter/commit/531118f3955446b2e055735b050f5ffd04ac3c2e))
+* update google.golang.org/genproto/googleapis/api digest to 08b0e42 ([#498](https://github.com/d0ugal/git-exporter/issues/498)) ([c0ce367](https://github.com/d0ugal/git-exporter/commit/c0ce367053e6ac7545b0e0ea8c192d73f8fa13a7))
+* update google.golang.org/genproto/googleapis/api digest to 1b09341 ([#494](https://github.com/d0ugal/git-exporter/issues/494)) ([b666fff](https://github.com/d0ugal/git-exporter/commit/b666fffebeb94fb126764811688999f5263cf8f1))
+* update google.golang.org/genproto/googleapis/rpc digest to 08b0e42 ([#499](https://github.com/d0ugal/git-exporter/issues/499)) ([8beaf90](https://github.com/d0ugal/git-exporter/commit/8beaf9049e0f480144639df40bf6210eff9d46fa))
+* update google.golang.org/genproto/googleapis/rpc digest to 1b09341 ([#495](https://github.com/d0ugal/git-exporter/issues/495)) ([2ff84fd](https://github.com/d0ugal/git-exporter/commit/2ff84fd26ae82e4e3d569eb6648fdee3ea40d9f0))
+* update module google.golang.org/grpc to v1.83.1 ([#500](https://github.com/d0ugal/git-exporter/issues/500)) ([f6864bf](https://github.com/d0ugal/git-exporter/commit/f6864bfce7a645d296e6ac54f7c82b56bbe55f19))
+
 ## [0.3.22](https://github.com/d0ugal/git-exporter/compare/v0.3.21...v0.3.22) (2026-08-18)
 
 
