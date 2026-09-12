@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.3.24](https://github.com/d0ugal/git-exporter/compare/v0.3.23...v0.3.24) (2026-09-12)
+
+
+### Bug Fixes
+
+* update google.golang.org/genproto/googleapis/api digest to f61a6ca ([#543](https://github.com/d0ugal/git-exporter/issues/543)) ([4cb23e0](https://github.com/d0ugal/git-exporter/commit/4cb23e0df5d07afb603ac0e33e19b5802d671467))
+* update google.golang.org/genproto/googleapis/rpc digest to f61a6ca ([#544](https://github.com/d0ugal/git-exporter/issues/544)) ([385b84a](https://github.com/d0ugal/git-exporter/commit/385b84aa13303cc0e953533432eeff32ee69116f))
+* update google.golang.org/genproto/googleapis/rpc digest to f8649dd ([#534](https://github.com/d0ugal/git-exporter/issues/534)) ([1a1fdd4](https://github.com/d0ugal/git-exporter/commit/1a1fdd46220b5289e14dea796c8f8dfaac8626e0))
+* update module github.com/bytedance/sonic to v1.15.4 ([#542](https://github.com/d0ugal/git-exporter/issues/542)) ([2a01b9b](https://github.com/d0ugal/git-exporter/commit/2a01b9bfc5dca52abe8851e7e214ae865ed3f3d6))
+* update module go.mongodb.org/mongo-driver/v2 to v2.9.1 ([#541](https://github.com/d0ugal/git-exporter/issues/541)) ([cede697](https://github.com/d0ugal/git-exporter/commit/cede697c5c0a8b1054fcd54079d509d2299de7ae))
+* update module golang.org/x/arch to v0.31.0 ([#536](https://github.com/d0ugal/git-exporter/issues/536)) ([dfb81cf](https://github.com/d0ugal/git-exporter/commit/dfb81cfbe4f5b60aa21f6c21e0f2edcf8db82339))
+* update module golang.org/x/net to v0.59.0 ([#540](https://github.com/d0ugal/git-exporter/issues/540)) ([8b4979a](https://github.com/d0ugal/git-exporter/commit/8b4979a64235439eaca75a610153c177b42b389e))
+* update module golang.org/x/sys to v0.48.0 ([#537](https://github.com/d0ugal/git-exporter/issues/537)) ([8244b9d](https://github.com/d0ugal/git-exporter/commit/8244b9df8e10a6fa694e377a47b109ba6bd9b084))
+* update module golang.org/x/text to v0.42.0 ([#538](https://github.com/d0ugal/git-exporter/issues/538)) ([8bb71df](https://github.com/d0ugal/git-exporter/commit/8bb71df45e25d14e5f5ce2f4efcf300e85d46ffc))
+
 ## [0.3.23](https://github.com/d0ugal/git-exporter/compare/v0.3.22...v0.3.23) (2026-09-08)
 
 
