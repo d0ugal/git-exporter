@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.3.25](https://github.com/d0ugal/git-exporter/compare/v0.3.24...v0.3.25) (2026-09-19)
+
+
+### Bug Fixes
+
+* update google.golang.org/genproto/googleapis/api digest to cecb647 ([#556](https://github.com/d0ugal/git-exporter/issues/556)) ([e6d0f76](https://github.com/d0ugal/git-exporter/commit/e6d0f76624cb4c4d4f3fc12943265d264b37b35a))
+* update google.golang.org/genproto/googleapis/api digest to eeb232e ([#552](https://github.com/d0ugal/git-exporter/issues/552)) ([3b86697](https://github.com/d0ugal/git-exporter/commit/3b866978904442a3eea4a398a2d048914c771dd8))
+* update google.golang.org/genproto/googleapis/rpc digest to cecb647 ([#557](https://github.com/d0ugal/git-exporter/issues/557)) ([44c5af2](https://github.com/d0ugal/git-exporter/commit/44c5af25b6ec56d5b09f7dae889278b29b2da690))
+* update google.golang.org/genproto/googleapis/rpc digest to eeb232e ([#555](https://github.com/d0ugal/git-exporter/issues/555)) ([497337e](https://github.com/d0ugal/git-exporter/commit/497337e85ad72b63f5bc7762b727adc81b1a5cb4))
+
 ## [0.3.24](https://github.com/d0ugal/git-exporter/compare/v0.3.23...v0.3.24) (2026-09-12)
 
 
