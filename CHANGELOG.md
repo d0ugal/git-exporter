@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.3.25](https://github.com/d0ugal/git-exporter/compare/v0.3.24...v0.3.25) (2026-09-22)
+
+
+### Bug Fixes
+
+* update google.golang.org/genproto/googleapis/api digest to b142276 ([#563](https://github.com/d0ugal/git-exporter/issues/563)) ([cdc559f](https://github.com/d0ugal/git-exporter/commit/cdc559f61b12387d3934ffd1f3bcca19761f9ffd))
+* update google.golang.org/genproto/googleapis/api digest to cecb647 ([#556](https://github.com/d0ugal/git-exporter/issues/556)) ([e6d0f76](https://github.com/d0ugal/git-exporter/commit/e6d0f76624cb4c4d4f3fc12943265d264b37b35a))
+* update google.golang.org/genproto/googleapis/api digest to eeb232e ([#552](https://github.com/d0ugal/git-exporter/issues/552)) ([3b86697](https://github.com/d0ugal/git-exporter/commit/3b866978904442a3eea4a398a2d048914c771dd8))
+* update google.golang.org/genproto/googleapis/rpc digest to b142276 ([#564](https://github.com/d0ugal/git-exporter/issues/564)) ([381a29e](https://github.com/d0ugal/git-exporter/commit/381a29e78409ebd96d949d5598065ec7992b685b))
+* update google.golang.org/genproto/googleapis/rpc digest to cecb647 ([#557](https://github.com/d0ugal/git-exporter/issues/557)) ([44c5af2](https://github.com/d0ugal/git-exporter/commit/44c5af25b6ec56d5b09f7dae889278b29b2da690))
+* update google.golang.org/genproto/googleapis/rpc digest to eeb232e ([#555](https://github.com/d0ugal/git-exporter/issues/555)) ([497337e](https://github.com/d0ugal/git-exporter/commit/497337e85ad72b63f5bc7762b727adc81b1a5cb4))
+* update module github.com/cenkalti/backoff/v5 to v7 ([#493](https://github.com/d0ugal/git-exporter/issues/493)) ([936d7fc](https://github.com/d0ugal/git-exporter/commit/936d7fcab2d64f2ab1adeee26571ed110614e57c))
+* update module github.com/go-playground/universal-translator to v0.18.2 ([#559](https://github.com/d0ugal/git-exporter/issues/559)) ([1a13551](https://github.com/d0ugal/git-exporter/commit/1a13551e4bb78057d4a7ef3d2b1823afb2739f41))
+* update module github.com/go-playground/validator/v10 to v10.30.5 ([#560](https://github.com/d0ugal/git-exporter/issues/560)) ([226e8ef](https://github.com/d0ugal/git-exporter/commit/226e8ef0dc254d9d7e24eeeaaebfd260ba80a1d8))
+
 ## [0.3.24](https://github.com/d0ugal/git-exporter/compare/v0.3.23...v0.3.24) (2026-09-12)
 
 
