@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.3.26](https://github.com/d0ugal/git-exporter/compare/v0.3.25...v0.3.26) (2026-09-25)
+
+
+### Bug Fixes
+
+* update module github.com/klauspost/compress to v1.20.1 ([#570](https://github.com/d0ugal/git-exporter/issues/570)) ([730b158](https://github.com/d0ugal/git-exporter/commit/730b158c0eaae81020e596eb276cec80824a3ba8))
+* update module github.com/ProtonMail/go-crypto to v1.5.0 ([#567](https://github.com/d0ugal/git-exporter/issues/567)) ([c165650](https://github.com/d0ugal/git-exporter/commit/c16565015d6b251df158a9775389bc0224355a69))
+* update module github.com/ProtonMail/go-crypto to v1.5.1 ([#568](https://github.com/d0ugal/git-exporter/issues/568)) ([39aa1c0](https://github.com/d0ugal/git-exporter/commit/39aa1c050ef44dad5e32097179ae8a391d3f5322))
+* update module github.com/quic-go/quic-go to v0.63.0 ([#565](https://github.com/d0ugal/git-exporter/issues/565)) ([4c088cb](https://github.com/d0ugal/git-exporter/commit/4c088cb11d65a17588c7f0e2a9d2022b7618474b))
+
 ## [0.3.25](https://github.com/d0ugal/git-exporter/compare/v0.3.24...v0.3.25) (2026-09-22)
 
 
