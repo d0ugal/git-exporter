@@ -1,5 +1,25 @@
 # Changelog
 
+## [0.3.26](https://github.com/d0ugal/git-exporter/compare/v0.3.25...v0.3.26) (2026-09-29)
+
+
+### Bug Fixes
+
+* update google.golang.org/genproto/googleapis/api digest to 8a89bd6 ([#576](https://github.com/d0ugal/git-exporter/issues/576)) ([9fafe8a](https://github.com/d0ugal/git-exporter/commit/9fafe8a6a92f5fcf4f67bd24e0ead757005096ce))
+* update google.golang.org/genproto/googleapis/rpc digest to 8a89bd6 ([#577](https://github.com/d0ugal/git-exporter/issues/577)) ([5544f09](https://github.com/d0ugal/git-exporter/commit/5544f098676b8fbf6325d6fb5503339f4171711b))
+* update module github.com/cenkalti/backoff/v5 to v7 ([#561](https://github.com/d0ugal/git-exporter/issues/561)) ([358e66e](https://github.com/d0ugal/git-exporter/commit/358e66e71129ea6e42b337f6f6c40d22b1372737))
+* update module github.com/go-playground/locales to v0.14.2 ([#574](https://github.com/d0ugal/git-exporter/issues/574)) ([3b672e4](https://github.com/d0ugal/git-exporter/commit/3b672e4f48feb6316623438a1a3f749ecd315e74))
+* update module github.com/goccy/go-json to v0.11.0 ([#572](https://github.com/d0ugal/git-exporter/issues/572)) ([ec4c324](https://github.com/d0ugal/git-exporter/commit/ec4c324fd2cd9807d07197e3210ff855f66248d4))
+* update module github.com/goccy/go-json to v0.11.1 ([#573](https://github.com/d0ugal/git-exporter/issues/573)) ([226ed38](https://github.com/d0ugal/git-exporter/commit/226ed38a25d8f330d0cf701c2d0b87bece2a47dd))
+* update module github.com/grpc-ecosystem/grpc-gateway/v2 to v2.31.0 ([#571](https://github.com/d0ugal/git-exporter/issues/571)) ([f73eba2](https://github.com/d0ugal/git-exporter/commit/f73eba25e3293ac527063fc8854c7f91960b7a6c))
+* update module github.com/klauspost/compress to v1.20.1 ([#570](https://github.com/d0ugal/git-exporter/issues/570)) ([730b158](https://github.com/d0ugal/git-exporter/commit/730b158c0eaae81020e596eb276cec80824a3ba8))
+* update module github.com/prometheus/common to v0.72.0 ([#579](https://github.com/d0ugal/git-exporter/issues/579)) ([6334a8a](https://github.com/d0ugal/git-exporter/commit/6334a8a6843fa16fc4e4291ed043b7ef5a921803))
+* update module github.com/ProtonMail/go-crypto to v1.5.0 ([#567](https://github.com/d0ugal/git-exporter/issues/567)) ([c165650](https://github.com/d0ugal/git-exporter/commit/c16565015d6b251df158a9775389bc0224355a69))
+* update module github.com/ProtonMail/go-crypto to v1.5.1 ([#568](https://github.com/d0ugal/git-exporter/issues/568)) ([39aa1c0](https://github.com/d0ugal/git-exporter/commit/39aa1c050ef44dad5e32097179ae8a391d3f5322))
+* update module github.com/ProtonMail/go-crypto to v1.5.2 ([#578](https://github.com/d0ugal/git-exporter/issues/578)) ([ec5e56c](https://github.com/d0ugal/git-exporter/commit/ec5e56c98bcca041b01fe4d7af88191ebef91fef))
+* update module github.com/quic-go/quic-go to v0.63.0 ([#565](https://github.com/d0ugal/git-exporter/issues/565)) ([4c088cb](https://github.com/d0ugal/git-exporter/commit/4c088cb11d65a17588c7f0e2a9d2022b7618474b))
+* update module google.golang.org/grpc to v1.84.0 ([#550](https://github.com/d0ugal/git-exporter/issues/550)) ([d488757](https://github.com/d0ugal/git-exporter/commit/d488757dfae5ad29ae81626a62bcc9cab35638b9))
+
 ## [0.3.25](https://github.com/d0ugal/git-exporter/compare/v0.3.24...v0.3.25) (2026-09-22)
 
 
