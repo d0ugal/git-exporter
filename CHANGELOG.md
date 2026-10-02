@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.3.27](https://github.com/d0ugal/git-exporter/compare/v0.3.26...v0.3.27) (2026-10-02)
+
+
+### Bug Fixes
+
+* update module github.com/d0ugal/promexporter to v1.14.70 ([#582](https://github.com/d0ugal/git-exporter/issues/582)) ([4449ec6](https://github.com/d0ugal/git-exporter/commit/4449ec6bffc28518476e8aacdba2616ee281e2d5))
+* update module github.com/d0ugal/promexporter to v1.14.71 ([#586](https://github.com/d0ugal/git-exporter/issues/586)) ([0b97730](https://github.com/d0ugal/git-exporter/commit/0b97730c526129e1734bfa25a24159a1f02f6851))
+* update module github.com/go-git/go-billy/v5 to v5.9.2 ([#588](https://github.com/d0ugal/git-exporter/issues/588)) ([f2aca71](https://github.com/d0ugal/git-exporter/commit/f2aca716b2f93d136fbf7cd0fa468539759302de))
+* update module github.com/goccy/go-json to v0.11.2 ([#580](https://github.com/d0ugal/git-exporter/issues/580)) ([79ab615](https://github.com/d0ugal/git-exporter/commit/79ab61593f9ca0fc27c61acf4d67e28baf44cda7))
+* update module github.com/grafana/pyroscope-go to v1.4.3 ([#583](https://github.com/d0ugal/git-exporter/issues/583)) ([f8c81c4](https://github.com/d0ugal/git-exporter/commit/f8c81c42073b5830b81ba219b86d4462628612e7))
+* update module github.com/pjbgf/sha1cd to v0.7.0 ([#585](https://github.com/d0ugal/git-exporter/issues/585)) ([a184773](https://github.com/d0ugal/git-exporter/commit/a184773f673aaad804e2f814bbf389f7368818c9))
+* update module go.opentelemetry.io/proto/otlp to v1.11.1 ([#584](https://github.com/d0ugal/git-exporter/issues/584)) ([d586ba6](https://github.com/d0ugal/git-exporter/commit/d586ba699d16dc2c660c3225b116472de7b3c08d))
+* update opentelemetry-go monorepo to v1.47.0 ([#587](https://github.com/d0ugal/git-exporter/issues/587)) ([39624b5](https://github.com/d0ugal/git-exporter/commit/39624b55818696856bf17afa36d62afd5e4f4cc3))
+* update opentelemetry-go-contrib monorepo to v0.72.0 ([#589](https://github.com/d0ugal/git-exporter/issues/589)) ([f714125](https://github.com/d0ugal/git-exporter/commit/f714125b82bceeb8ddf6a0d0134e6fd91a8a392f))
+
 ## [0.3.26](https://github.com/d0ugal/git-exporter/compare/v0.3.25...v0.3.26) (2026-09-29)
 
 
