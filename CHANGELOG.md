@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.3.29](https://github.com/d0ugal/git-exporter/compare/v0.3.28...v0.3.29) (2026-10-10)
+
+
+### Bug Fixes
+
+* update go toolchain directive to v1.27.2 ([#597](https://github.com/d0ugal/git-exporter/issues/597)) ([2c108de](https://github.com/d0ugal/git-exporter/commit/2c108de657ae170e7ceb079fdd88a28497373f90))
+* update module github.com/Microsoft/go-winio to v0.6.3 ([#602](https://github.com/d0ugal/git-exporter/issues/602)) ([a26877e](https://github.com/d0ugal/git-exporter/commit/a26877eba89dcc79805b3018de25b94c06183e03))
+* update module github.com/prometheus/client_golang to v1.25.0 ([#598](https://github.com/d0ugal/git-exporter/issues/598)) ([aa1a2a2](https://github.com/d0ugal/git-exporter/commit/aa1a2a2042b110f6b9e17b1f89085388cd38d2be))
+* update module golang.org/x/arch to v0.32.0 ([#604](https://github.com/d0ugal/git-exporter/issues/604)) ([50e838c](https://github.com/d0ugal/git-exporter/commit/50e838c05d3db5575af26095ffcbd16710f76c2a))
+* update module golang.org/x/net to v0.60.0 ([#601](https://github.com/d0ugal/git-exporter/issues/601)) ([a0f8894](https://github.com/d0ugal/git-exporter/commit/a0f88944c6956b521eeb01c640386ea7afb169d0))
+* update module golang.org/x/net to v0.61.0 ([#607](https://github.com/d0ugal/git-exporter/issues/607)) ([ddb7301](https://github.com/d0ugal/git-exporter/commit/ddb73011286867033928d0382a8d5bf30301fe91))
+* update module golang.org/x/sys to v0.49.0 ([#605](https://github.com/d0ugal/git-exporter/issues/605)) ([34956b1](https://github.com/d0ugal/git-exporter/commit/34956b1694798aa83d20c589403ce664680cd572))
+
 ## [0.3.28](https://github.com/d0ugal/git-exporter/compare/v0.3.27...v0.3.28) (2026-10-07)
 
 
