@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.3.30](https://github.com/d0ugal/git-exporter/compare/v0.3.29...v0.3.30) (2026-10-17)
+
+
+### Bug Fixes
+
+* update module github.com/d0ugal/promexporter to v1.14.72 ([#614](https://github.com/d0ugal/git-exporter/issues/614)) ([b77b46a](https://github.com/d0ugal/git-exporter/commit/b77b46a6b08db4d5242bacacfa22d1cb1cf53ec3))
+* update module github.com/gabriel-vasile/mimetype to v1.4.16 ([#620](https://github.com/d0ugal/git-exporter/issues/620)) ([e78093e](https://github.com/d0ugal/git-exporter/commit/e78093e6e38fb4d2c67b0edafdc8c836e544889b))
+* update module github.com/grpc-ecosystem/grpc-gateway/v2 to v2.32.0 ([#616](https://github.com/d0ugal/git-exporter/issues/616)) ([4e047d0](https://github.com/d0ugal/git-exporter/commit/4e047d0c61eb8da2c685dbd350d0d93b4c52a6a0))
+* update module github.com/klauspost/cpuid/v2 to v2.4.1 ([#618](https://github.com/d0ugal/git-exporter/issues/618)) ([feffc99](https://github.com/d0ugal/git-exporter/commit/feffc990fafc8108a639c0ec1fdcb6cd5dec597f))
+* update module github.com/quic-go/quic-go to v0.64.0 ([#617](https://github.com/d0ugal/git-exporter/issues/617)) ([29e1fb1](https://github.com/d0ugal/git-exporter/commit/29e1fb121fcad432eca670ab731012baa2933c25))
+
 ## [0.3.29](https://github.com/d0ugal/git-exporter/compare/v0.3.28...v0.3.29) (2026-10-14)
 
 
