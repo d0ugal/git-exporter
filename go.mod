@@ -3,7 +3,7 @@ module github.com/d0ugal/git-exporter
 go 1.27.3
 
 require (
-	github.com/d0ugal/promexporter v1.14.74
+	github.com/d0ugal/promexporter v1.14.75
 	github.com/go-git/go-git/v5 v5.19.3
 	github.com/prometheus/client_golang v1.25.0
 	go.opentelemetry.io/otel v1.47.0
