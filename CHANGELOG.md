@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.3.35](https://github.com/d0ugal/git-exporter/compare/v0.3.34...v0.3.35) (2026-11-06)
+
+
+### Bug Fixes
+
+* update google.golang.org/genproto/googleapis/api digest to d1e00e9 ([#662](https://github.com/d0ugal/git-exporter/issues/662)) ([aab15eb](https://github.com/d0ugal/git-exporter/commit/aab15eba86129459d7e509b3527a88439c70215c))
+* update google.golang.org/genproto/googleapis/rpc digest to d1e00e9 ([#663](https://github.com/d0ugal/git-exporter/issues/663)) ([52a1a21](https://github.com/d0ugal/git-exporter/commit/52a1a21b9cb3ae7b484eb653f2c983c14836b314))
+* update module github.com/klauspost/cpuid/v2 to v2.4.2 ([#659](https://github.com/d0ugal/git-exporter/issues/659)) ([62d1825](https://github.com/d0ugal/git-exporter/commit/62d1825c69a7a271f0e7e3524cdf792e6685c6fe))
+* update module go.mongodb.org/mongo-driver/v2 to v2.9.3 ([#661](https://github.com/d0ugal/git-exporter/issues/661)) ([816891e](https://github.com/d0ugal/git-exporter/commit/816891ee06f3b8ea9d0953e093be7e88e70553d1))
+
 ## [0.3.34](https://github.com/d0ugal/git-exporter/compare/v0.3.33...v0.3.34) (2026-11-03)
 
 
