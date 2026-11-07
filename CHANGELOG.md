@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.36](https://github.com/d0ugal/git-exporter/compare/v0.3.35...v0.3.36) (2026-11-07)
+
+
+### Bug Fixes
+
+* update module go.mongodb.org/mongo-driver/v2 to v2.10.0 ([#669](https://github.com/d0ugal/git-exporter/issues/669)) ([64d8596](https://github.com/d0ugal/git-exporter/commit/64d85969399930a1cf7a01706aa2b0ea6aa93bec))
+
 ## [0.3.35](https://github.com/d0ugal/git-exporter/compare/v0.3.34...v0.3.35) (2026-11-06)
 
 
