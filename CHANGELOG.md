@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.3.36](https://github.com/d0ugal/git-exporter/compare/v0.3.35...v0.3.36) (2026-11-10)
+
+
+### Bug Fixes
+
+* update google.golang.org/genproto/googleapis/api digest to 09e21b2 ([#675](https://github.com/d0ugal/git-exporter/issues/675)) ([cc98c9c](https://github.com/d0ugal/git-exporter/commit/cc98c9cd7fd1e39ad1548e1fd255c22cbd47a9a0))
+* update google.golang.org/genproto/googleapis/rpc digest to 09e21b2 ([#676](https://github.com/d0ugal/git-exporter/issues/676)) ([5d8a270](https://github.com/d0ugal/git-exporter/commit/5d8a27028e2c846ac4b60f6ae05ec4a1d243a3ce))
+* update module github.com/gin-contrib/sse to v1.2.1 ([#671](https://github.com/d0ugal/git-exporter/issues/671)) ([1d880ef](https://github.com/d0ugal/git-exporter/commit/1d880ef0288d207f0d87a63d7089f407486985f3))
+* update module github.com/klauspost/compress to v1.20.4 ([#673](https://github.com/d0ugal/git-exporter/issues/673)) ([3a04427](https://github.com/d0ugal/git-exporter/commit/3a0442762c4f87782fbfb04a292bf74871bf2e3e))
+* update module go.mongodb.org/mongo-driver/v2 to v2.10.0 ([#669](https://github.com/d0ugal/git-exporter/issues/669)) ([64d8596](https://github.com/d0ugal/git-exporter/commit/64d85969399930a1cf7a01706aa2b0ea6aa93bec))
+* update module golang.org/x/arch to v0.33.0 ([#674](https://github.com/d0ugal/git-exporter/issues/674)) ([8e0d730](https://github.com/d0ugal/git-exporter/commit/8e0d73000d9e871f49b538fdd70a448390e690ce))
+* update module golang.org/x/sys to v0.50.0 ([#677](https://github.com/d0ugal/git-exporter/issues/677)) ([f53939e](https://github.com/d0ugal/git-exporter/commit/f53939e058b0cb914faa04b77619d362d610139b))
+
 ## [0.3.35](https://github.com/d0ugal/git-exporter/compare/v0.3.34...v0.3.35) (2026-11-06)
 
 
