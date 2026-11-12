@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.3.37](https://github.com/d0ugal/git-exporter/compare/v0.3.36...v0.3.37) (2026-11-12)
+
+
+### Bug Fixes
+
+* update module github.com/d0ugal/promexporter to v1.14.76 ([#680](https://github.com/d0ugal/git-exporter/issues/680)) ([535defb](https://github.com/d0ugal/git-exporter/commit/535defb82b58362265439a092505ca7d71cabf13))
+* update module github.com/d0ugal/promexporter to v1.14.77 ([#685](https://github.com/d0ugal/git-exporter/issues/685)) ([ca5347f](https://github.com/d0ugal/git-exporter/commit/ca5347f6f1effbd28efac8c135403770a99b8bfe))
+* update module github.com/grafana/pyroscope-go to v1.5.0 ([#681](https://github.com/d0ugal/git-exporter/issues/681)) ([0c9156a](https://github.com/d0ugal/git-exporter/commit/0c9156a2c923f73d6508ffcc22695d382515b191))
+* update module github.com/prometheus/common to v0.74.0 ([#686](https://github.com/d0ugal/git-exporter/issues/686)) ([051d311](https://github.com/d0ugal/git-exporter/commit/051d311a78c9e060a7b6e093efe9eb44b3ac5b49))
+* update module golang.org/x/crypto to v0.59.0 ([#684](https://github.com/d0ugal/git-exporter/issues/684)) ([7cc374f](https://github.com/d0ugal/git-exporter/commit/7cc374f7f9f8970bb1c846fe357d9ee5522dd231))
+* update module golang.org/x/text to v0.44.0 ([#678](https://github.com/d0ugal/git-exporter/issues/678)) ([de6bd1a](https://github.com/d0ugal/git-exporter/commit/de6bd1a1721f4dfc101ca6d0cbdd1eb1678c32b8))
+
 ## [0.3.36](https://github.com/d0ugal/git-exporter/compare/v0.3.35...v0.3.36) (2026-11-10)
 
 
