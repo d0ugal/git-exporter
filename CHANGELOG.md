@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.38](https://github.com/d0ugal/git-exporter/compare/v0.3.37...v0.3.38) (2026-11-17)
+
+
+### Bug Fixes
+
+* update google.golang.org/genproto/googleapis/rpc digest to fd2c768 ([#690](https://github.com/d0ugal/git-exporter/issues/690)) ([71af1cb](https://github.com/d0ugal/git-exporter/commit/71af1cb89ce968fab1bb959483e78ac57302828a))
+* update module github.com/sergi/go-diff to v1.4.5 ([#692](https://github.com/d0ugal/git-exporter/issues/692)) ([f0a4d83](https://github.com/d0ugal/git-exporter/commit/f0a4d83369d70a10f75e6a9bbf4e44546abfa8d5))
+
 ## [0.3.37](https://github.com/d0ugal/git-exporter/compare/v0.3.36...v0.3.37) (2026-11-17)
 
 
