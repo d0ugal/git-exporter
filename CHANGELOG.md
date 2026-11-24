@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.3.40](https://github.com/d0ugal/git-exporter/compare/v0.3.39...v0.3.40) (2026-11-24)
+
+
+### Bug Fixes
+
+* update google.golang.org/genproto/googleapis/api digest to 1e707ab ([#704](https://github.com/d0ugal/git-exporter/issues/704)) ([2a61e85](https://github.com/d0ugal/git-exporter/commit/2a61e85831e97f322330d0a7d531c6bd365c439a))
+* update google.golang.org/genproto/googleapis/rpc digest to 1e707ab ([#705](https://github.com/d0ugal/git-exporter/issues/705)) ([c97abc1](https://github.com/d0ugal/git-exporter/commit/c97abc1651e8ee9a04a27547dfae828747af5df6))
+* update module github.com/d0ugal/promexporter to v1.14.78 ([#702](https://github.com/d0ugal/git-exporter/issues/702)) ([7bc59b4](https://github.com/d0ugal/git-exporter/commit/7bc59b48b3f23896ddbbe8deff3859eaa93b0c97))
+* update module github.com/klauspost/compress to v1.20.5 ([#700](https://github.com/d0ugal/git-exporter/issues/700)) ([11edcae](https://github.com/d0ugal/git-exporter/commit/11edcae0364a8c35100c922a8118c261194b396d))
+* update module github.com/quic-go/quic-go to v0.66.0 ([#706](https://github.com/d0ugal/git-exporter/issues/706)) ([0cb61d1](https://github.com/d0ugal/git-exporter/commit/0cb61d12db1305ed1518dcf8585f741bc7dfba13))
+* update module go.opentelemetry.io/auto/sdk to v1.2.2 ([#703](https://github.com/d0ugal/git-exporter/issues/703)) ([908c501](https://github.com/d0ugal/git-exporter/commit/908c501a5d46b32e85aa102d710bc3d2c48c1cb5))
+
 ## [0.3.39](https://github.com/d0ugal/git-exporter/compare/v0.3.38...v0.3.39) (2026-11-20)
 
 
